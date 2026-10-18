@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional fitness coaching and nutrition plans">
+    <meta name="keywords" content="fitness, personal training, nutrition, workout, health, wellness, Wingate Academy, Elishay Fitness, training programs, meal plans">
+    <meta name="author" content="Elishay Fitness">
+    <meta name="theme-color" content="#000000">
+    <title>Elishay Fitness - Professional Personal Training & Nutrition</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#CFA55B',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts - Preloaded to prevent FOUT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Heebo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXpsog.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/heebo/v21/NGS6v5_NC0k9P9H0TbFhsqMA6aw.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white font-sans rtl" style="font-family: 'Heebo', sans-serif; direction: rtl;">
+    
+    <!-- Sticky Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full bg-black/95 backdrop-blur-sm z-50 border-b border-gold/20">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <a href="#home" class="text-2xl font-bold text-gold" data-i18n="brand.name">Elishay Fitness</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
+                    <a href="#home" class="nav-link" data-i18n="nav.home">Home</a>
+                    <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+                    <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
+                    <a href="#success" class="nav-link" data-i18n="nav.success">Success Stories</a>
+                    <a href="#shop" class="nav-link" data-i18n="nav.shop">Shop</a>
+                    <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                    
+                    <!-- Language Switcher -->
+                    <div class="flex items-center space-x-2 rtl:space-x-reverse border-l border-gold/30 pl-4 rtl:border-l-0 rtl:border-r rtl:pr-4 rtl:pl-0">
+                        <button id="lang-en" class="lang-btn" data-lang="en">EN</button>
+                        <span class="text-gold">|</span>
+                        <button id="lang-he" class="lang-btn active" data-lang="he">HE</button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gold">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="nav-link" data-i18n="nav.home">Home</a>
+                    <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+                    <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
+                    <a href="#success" class="nav-link" data-i18n="nav.success">Success Stories</a>
+                    <a href="#shop" class="nav-link" data-i18n="nav.shop">Shop</a>
+                    <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                    <div class="flex items-center space-x-2 rtl:space-x-reverse pt-2 border-t border-gold/30">
+                        <button id="lang-en-mobile" class="lang-btn" data-lang="en">EN</button>
+                        <span class="text-gold">|</span>
+                        <button id="lang-he-mobile" class="lang-btn active" data-lang="he">HE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&h=1080&fit=crop');">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 container mx-auto px-4 text-center">
+            <h1 id="hero-title" class="text-5xl md:text-7xl font-bold mb-6 text-white" data-i18n="hero.title">Transform Your Body, Elevate Your Life</h1>
+            <p id="hero-subtitle" class="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto" data-i18n="hero.subtitle">Professional fitness coaching tailored to your goals. Certified Wingate Academy trainer dedicated to your success.</p>
+            <a href="#contact" class="cta-button inline-block px-8 py-4 bg-gold text-black font-bold rounded-lg hover:bg-gold/90 transition-all duration-300 transform hover:scale-105" data-i18n="hero.cta">Start Your Transformation</a>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white text-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4" data-i18n="services.title">Our Services</h2>
+            <p class="text-xl text-center mb-12 text-gray-600" data-i18n="services.subtitle">Comprehensive fitness solutions designed for your success</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Personal Training -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-center" data-i18n="services.personalTraining.title">Personal Training</h3>
+                    <p class="text-gray-700 leading-relaxed" data-i18n="services.personalTraining.description">Experience one-on-one coaching with customized workout plans designed specifically for your body and goals.</p>
+                </div>
+                
+                <!-- Nutrition Plans -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-center" data-i18n="services.nutrition.title">Nutrition Plans</h3>
+                    <p class="text-gray-700 leading-relaxed" data-i18n="services.nutrition.description">Fuel your transformation with personalized meal plans crafted to support your training goals.</p>
+                </div>
+                
+                <!-- Digital Programs -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-center" data-i18n="services.digitalPrograms.title">Digital Workout Programs</h3>
+                    <p class="text-gray-700 leading-relaxed" data-i18n="services.digitalPrograms.description">Access professional training programs from anywhere, anytime. Perfect for those seeking flexibility without compromising quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12" data-i18n="about.title">About Elishay</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 rtl:md:order-2">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=800&fit=crop" alt="Elishay Fitness Coach" class="rounded-lg shadow-2xl" id="about-img-alt" data-i18n="about.alt">
+                </div>
+                <div class="order-1 md:order-2 rtl:md:order-1 space-y-6">
+                    <p class="text-lg leading-relaxed text-gray-300" data-i18n="about.paragraph1">Elishay is a certified fitness coach from the prestigious Wingate Academy, Israel's leading institution for sports and fitness education.</p>
+                    <p class="text-lg leading-relaxed text-gray-300" data-i18n="about.paragraph2">His training philosophy centers on holistic wellness—strengthening not just the body, but also building mental resilience and sustainable habits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Success Stories Section -->
+    <section id="success" class="py-20 bg-white text-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4" data-i18n="success.title">Success Stories</h2>
+            <p class="text-xl text-center mb-12 text-gray-600" data-i18n="success.subtitle">Real transformations from real people</p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="success-card bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=800&fit=crop" alt="Success story" class="w-full h-64 object-cover" data-i18n="success.story1.alt">
+                    <div class="p-6">
+                        <p class="text-gray-700" data-i18n="success.story1.caption">Sarah lost 15kg and gained incredible strength. 'Elishay's personalized approach changed my life completely.'</p>
+                    </div>
+                </div>
+                <div class="success-card bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=800&fit=crop" alt="Success story" class="w-full h-64 object-cover" data-i18n="success.story2.alt">
+                    <div class="p-6">
+                        <p class="text-gray-700" data-i18n="success.story2.caption">David achieved his dream physique in 6 months. 'The nutrition plan was a game-changer for my results.'</p>
+                    </div>
+                </div>
+                <div class="success-card bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=800&h=800&fit=crop" alt="Success story" class="w-full h-64 object-cover" data-i18n="success.story3.alt">
+                    <div class="p-6">
+                        <p class="text-gray-700" data-i18n="success.story3.caption">Rachel built muscle and confidence. 'The digital program fit perfectly into my busy schedule.'</p>
+                    </div>
+                </div>
+                <div class="success-card bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=800&h=800&fit=crop" alt="Success story" class="w-full h-64 object-cover" data-i18n="success.story4.alt">
+                    <div class="p-6">
+                        <p class="text-gray-700" data-i18n="success.story4.caption">Michael transformed his health and energy levels. 'Professional coaching made all the difference.'</p>
+                    </div>
+                </div>
+                <div class="success-card bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=800&fit=crop" alt="Success story" class="w-full h-64 object-cover" data-i18n="success.story5.alt">
+                    <div class="p-6">
+                        <p class="text-gray-700" data-i18n="success.story5.caption">Lisa reached her fitness goals and maintained them. 'Sustainable habits, real results.'</p>
+                    </div>
+                </div>
+                <div class="success-card bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=800&fit=crop" alt="Success story" class="w-full h-64 object-cover" data-i18n="success.story6.alt">
+                    <div class="p-6">
+                        <p class="text-gray-700" data-i18n="success.story6.caption">Tom improved his performance and lifestyle. 'The best investment I've made in myself.'</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pro Tips Section -->
+    <section id="tips" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4" data-i18n="tips.title">Pro Tips</h2>
+            <p class="text-xl text-center mb-12 text-gray-400" data-i18n="tips.subtitle">Expert advice for your fitness journey</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="tip-card bg-gray-900 p-6 rounded-lg border border-gold/20 hover:border-gold transition-colors duration-300">
+                    <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center mb-4">
+                        <span class="text-black font-bold text-xl">1</span>
+                    </div>
+                    <p class="text-gray-300" data-i18n="tips.tip1">Consistency beats intensity—regular, moderate training yields better long-term results than sporadic intense sessions.</p>
+                </div>
+                <div class="tip-card bg-gray-900 p-6 rounded-lg border border-gold/20 hover:border-gold transition-colors duration-300">
+                    <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center mb-4">
+                        <span class="text-black font-bold text-xl">2</span>
+                    </div>
+                    <p class="text-gray-300" data-i18n="tips.tip2">Prioritize recovery—adequate sleep and rest days are crucial for muscle growth and performance improvement.</p>
+                </div>
+                <div class="tip-card bg-gray-900 p-6 rounded-lg border border-gold/20 hover:border-gold transition-colors duration-300">
+                    <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center mb-4">
+                        <span class="text-black font-bold text-xl">3</span>
+                    </div>
+                    <p class="text-gray-300" data-i18n="tips.tip3">Track your progress—keeping a training and nutrition log helps identify what works and keeps you motivated.</p>
+                </div>
+                <div class="tip-card bg-gray-900 p-6 rounded-lg border border-gold/20 hover:border-gold transition-colors duration-300">
+                    <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center mb-4">
+                        <span class="text-black font-bold text-xl">4</span>
+                    </div>
+                    <p class="text-gray-300" data-i18n="tips.tip4">Stay hydrated—proper hydration supports performance, recovery, and overall health throughout your training.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white text-black">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12" data-i18n="faq.title">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                <div class="faq-item bg-gray-50 rounded-lg overflow-hidden">
+                    <button class="faq-question w-full text-left rtl:text-right p-6 flex items-center justify-between hover:bg-gray-100 transition-colors duration-200">
+                        <span class="font-bold text-lg" data-i18n="faq.q1">How often should I train?</span>
+                        <svg class="faq-icon w-5 h-5 text-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-700" data-i18n="faq.a1">Training frequency depends on your goals, experience level, and recovery capacity. Beginners typically benefit from 3-4 sessions per week, while advanced trainees may train 5-6 times weekly. We'll design a program that matches your schedule and maximizes results.</div>
+                </div>
+                
+                <div class="faq-item bg-gray-50 rounded-lg overflow-hidden">
+                    <button class="faq-question w-full text-left rtl:text-right p-6 flex items-center justify-between hover:bg-gray-100 transition-colors duration-200">
+                        <span class="font-bold text-lg" data-i18n="faq.q2">What nutrition plan suits beginners?</span>
+                        <svg class="faq-icon w-5 h-5 text-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-700" data-i18n="faq.a2">Beginners should focus on establishing consistent eating habits, balanced macronutrients, and adequate protein intake. We'll create a simple, sustainable meal plan that teaches fundamentals while supporting your training goals. No extreme diets—just smart, practical nutrition.</div>
+                </div>
+                
+                <div class="faq-item bg-gray-50 rounded-lg overflow-hidden">
+                    <button class="faq-question w-full text-left rtl:text-right p-6 flex items-center justify-between hover:bg-gray-100 transition-colors duration-200">
+                        <span class="font-bold text-lg" data-i18n="faq.q3">Can I achieve results with digital programs alone?</span>
+                        <svg class="faq-icon w-5 h-5 text-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-700" data-i18n="faq.a3">Absolutely! Our digital programs are comprehensive and include detailed instructions, progress tracking, and support. Many clients achieve excellent results remotely. However, combining digital programs with occasional personal training sessions can accelerate progress.</div>
+                </div>
+                
+                <div class="faq-item bg-gray-50 rounded-lg overflow-hidden">
+                    <button class="faq-question w-full text-left rtl:text-right p-6 flex items-center justify-between hover:bg-gray-100 transition-colors duration-200">
+                        <span class="font-bold text-lg" data-i18n="faq.q4">How long until I see results?</span>
+                        <svg class="faq-icon w-5 h-5 text-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-700" data-i18n="faq.a4">Results vary based on consistency, effort, and individual factors. Most clients notice improvements in energy and strength within 2-4 weeks. Visible body composition changes typically appear after 6-8 weeks of consistent training and proper nutrition. We'll track your progress and adjust as needed.</div>
+                </div>
+                
+                <div class="faq-item bg-gray-50 rounded-lg overflow-hidden">
+                    <button class="faq-question w-full text-left rtl:text-right p-6 flex items-center justify-between hover:bg-gray-100 transition-colors duration-200">
+                        <span class="font-bold text-lg" data-i18n="faq.q5">Do you offer nutrition consultations?</span>
+                        <svg class="faq-icon w-5 h-5 text-gold transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-700" data-i18n="faq.a5">Yes! Nutrition consultations are available as part of our comprehensive service packages. We'll analyze your current eating habits, create personalized meal plans, and provide ongoing guidance to ensure your nutrition supports your fitness goals effectively.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Shop Section -->
+    <section id="shop" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4" data-i18n="shop.title">Training Packages</h2>
+            <p class="text-xl text-center mb-12 text-gray-400" data-i18n="shop.subtitle">Choose the perfect plan for your goals</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="package-card bg-gray-900 p-6 rounded-lg border border-gold/20 hover:border-gold transition-all duration-300 hover:transform hover:scale-105 flex flex-col h-full">
+                    <h3 class="text-2xl font-bold mb-4 text-gold" data-i18n="shop.package1.name">12-Week Transformation Package</h3>
+                    <p class="text-gray-300 mb-4 flex-grow" data-i18n="shop.package1.description">Complete personal training program with nutrition guidance. Includes 24 training sessions, meal plan, and ongoing support.</p>
+                    <div class="mt-auto">
+                        <p class="text-gold font-bold mb-4" data-i18n="shop.package1.price">Contact for pricing</p>
+                        <button class="order-btn w-full bg-gold text-black py-3 rounded-lg font-bold hover:bg-gold/90 transition-colors duration-300" data-package="package1" data-i18n="shop.package1.button">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="package-card bg-gray-900 p-6 rounded-lg border border-gold/20 hover:border-gold transition-all duration-300 hover:transform hover:scale-105 flex flex-col h-full">
+                    <h3 class="text-2xl font-bold mb-4 text-gold" data-i18n="shop.package2.name">Monthly Meal Plan Subscription</h3>
+                    <p class="text-gray-300 mb-4 flex-grow" data-i18n="shop.package2.description">Personalized nutrition plans delivered monthly. Includes meal prep guides, shopping lists, and recipe modifications.</p>
+                    <div class="mt-auto">
+                        <p class="text-gold font-bold mb-4" data-i18n="shop.package2.price">Contact for pricing</p>
+                        <button class="order-btn w-full bg-gold text-black py-3 rounded-lg font-bold hover:bg-gold/90 transition-colors duration-300" data-package="package2" data-i18n="shop.package2.button">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="package-card bg-gray-900 p-6 rounded-lg border border-gold/20 hover:border-gold transition-all duration-300 hover:transform hover:scale-105 flex flex-col h-full">
+                    <h3 class="text-2xl font-bold mb-4 text-gold" data-i18n="shop.package3.name">Digital 8-Week Program</h3>
+                    <p class="text-gray-300 mb-4 flex-grow" data-i18n="shop.package3.description">Comprehensive online training program with video instructions, progress tracking, and email support.</p>
+                    <div class="mt-auto">
+                        <p class="text-gold font-bold mb-4" data-i18n="shop.package3.price">Contact for pricing</p>
+                        <button class="order-btn w-full bg-gold text-black py-3 rounded-lg font-bold hover:bg-gold/90 transition-colors duration-300" data-package="package3" data-i18n="shop.package3.button">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="package-card bg-gray-900 p-6 rounded-lg border border-gold/20 hover:border-gold transition-all duration-300 hover:transform hover:scale-105 flex flex-col h-full">
+                    <h3 class="text-2xl font-bold mb-4 text-gold" data-i18n="shop.package4.name">Premium Coaching Package</h3>
+                    <p class="text-gray-300 mb-4 flex-grow" data-i18n="shop.package4.description">All-inclusive: personal training, nutrition plans, digital access, and priority support. Maximum results guaranteed.</p>
+                    <div class="mt-auto">
+                        <p class="text-gold font-bold mb-4" data-i18n="shop.package4.price">Contact for pricing</p>
+                        <button class="order-btn w-full bg-gold text-black py-3 rounded-lg font-bold hover:bg-gold/90 transition-colors duration-300" data-package="package4" data-i18n="shop.package4.button">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Order Form Modal -->
+    <div id="order-modal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
+        <div class="bg-white text-black rounded-lg max-w-md w-full p-8 relative">
+            <button id="close-order-modal" class="absolute top-4 right-4 text-gray-500 hover:text-black text-2xl">&times;</button>
+            <h3 class="text-2xl font-bold mb-6" data-i18n="orderForm.title">Order Package</h3>
+            <form id="order-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="mb-4">
+                    <label class="block mb-2 font-bold" data-i18n="orderForm.name">Full Name</label>
+                    <input type="text" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gold" data-i18n-placeholder="orderForm.name">
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2 font-bold" data-i18n="orderForm.email">Email</label>
+                    <input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gold" data-i18n-placeholder="orderForm.email">
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2 font-bold" data-i18n="orderForm.package">Select Package</label>
+                    <select name="package" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gold">
+                        <option value="" data-i18n="orderForm.package">Select Package</option>
+                        <option value="package1" data-i18n="orderForm.package1">12-Week Transformation Package</option>
+                        <option value="package2" data-i18n="orderForm.package2">Monthly Meal Plan Subscription</option>
+                        <option value="package3" data-i18n="orderForm.package3">Digital 8-Week Program</option>
+                        <option value="package4" data-i18n="orderForm.package4">Premium Coaching Package</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-gold text-black py-3 rounded-lg font-bold hover:bg-gold/90 transition-colors duration-300" data-i18n="orderForm.submit">Submit Order</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white text-black">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4" data-i18n="contact.title">Get In Touch</h2>
+            <p class="text-xl text-center mb-12 text-gray-600" data-i18n="contact.subtitle">Ready to start your transformation? Let's talk.</p>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+                        <div>
+                            <label class="block mb-2 font-bold" data-i18n="contact.form.name">Name</label>
+                            <input type="text" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gold" data-i18n-placeholder="contact.form.name">
+                        </div>
+                        <div>
+                            <label class="block mb-2 font-bold" data-i18n="contact.form.email">Email</label>
+                            <input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gold" data-i18n-placeholder="contact.form.email">
+                        </div>
+                        <div>
+                            <label class="block mb-2 font-bold" data-i18n="contact.form.message">Message</label>
+                            <textarea name="message" required rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gold" data-i18n-placeholder="contact.form.message"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gold text-black py-3 rounded-lg font-bold hover:bg-gold/90 transition-colors duration-300" data-i18n="contact.form.submit">Send Message</button>
+                    </form>
+                    <div id="form-message" class="mt-4 hidden"></div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4" data-i18n="contact.info.email">Email</h3>
+                        <p class="text-gray-700">info@elishayfitness.com</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4" data-i18n="contact.info.phone">Phone</h3>
+                        <p class="text-gray-700">+972-XX-XXX-XXXX</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4" data-i18n="footer.follow">Follow Us</h3>
+                        <div class="flex space-x-4 rtl:space-x-reverse">
+                            <a href="#" class="text-gold hover:text-gold/80 text-2xl">📱</a>
+                            <a href="#" class="text-gold hover:text-gold/80 text-2xl">📷</a>
+                            <a href="#" class="text-gold hover:text-gold/80 text-2xl">💼</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-black py-8 border-t border-gold/20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <div class="flex flex-col items-center md:items-start space-y-2">
+                    <p class="text-gray-400" data-i18n="footer.copyright">© 2025 Elishay Fitness. All rights reserved.</p>
+                    <div class="flex flex-wrap gap-2 justify-center md:justify-start text-xs text-gray-500">
+                        <span>#WebDesign</span>
+                        <span>#WebDevelopment</span>
+                        <span>#UXUI</span>
+                        <span>#Fitness</span>
+                        <span>#PersonalTraining</span>
+                        <span>#DigitalStudio</span>
+                    </div>
+                </div>
+                <div class="flex space-x-6 rtl:space-x-reverse">
+                    <a href="#home" class="text-gray-400 hover:text-gold transition-colors duration-300" data-i18n="nav.home">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-gold transition-colors duration-300" data-i18n="nav.about">About</a>
+                    <a href="#services" class="text-gray-400 hover:text-gold transition-colors duration-300" data-i18n="nav.services">Services</a>
+                    <a href="#contact" class="text-gray-400 hover:text-gold transition-colors duration-300" data-i18n="nav.contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
+

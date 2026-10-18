@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "title": "Elishay Fitness - Professional Personal Training & Nutrition",
+    "description": "Certified Wingate Academy fitness coach offering personal training, nutrition plans, and digital workout programs. Transform your body and mind with professional guidance."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "success": "Success Stories",
+    "shop": "Shop",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Transform Your Body, Elevate Your Life",
+    "subtitle": "Professional fitness coaching tailored to your goals. Certified Wingate Academy trainer dedicated to your success.",
+    "cta": "Start Your Transformation",
+    "alt": "Professional fitness training session"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive fitness solutions designed for your success",
+    "personalTraining": {
+      "title": "Personal Training",
+      "description": "Experience one-on-one coaching with customized workout plans designed specifically for your body and goals. Receive expert guidance, motivation, and accountability to push beyond your limits. Our personalized approach ensures you achieve maximum results through proper form, progressive overload, and strategic programming."
+    },
+    "nutrition": {
+      "title": "Nutrition Plans",
+      "description": "Fuel your transformation with personalized meal plans crafted to support your training goals. Learn the fundamentals of healthy eating, macronutrient balance, and meal timing. Receive ongoing support and adjustments to ensure your nutrition aligns perfectly with your fitness journey and lifestyle."
+    },
+    "digitalPrograms": {
+      "title": "Digital Workout Programs",
+      "description": "Access professional training programs from anywhere, anytime. Perfect for those seeking flexibility without compromising quality. Each program includes detailed exercise instructions, progress tracking, and direct support. Achieve your goals remotely with the same level of expertise and care."
+    }
+  },
+  "about": {
+    "title": "About Elishay",
+    "paragraph1": "Elishay is a certified fitness coach from the prestigious Wingate Academy, Israel's leading institution for sports and fitness education. With years of experience in transforming lives through fitness, Elishay combines scientific knowledge with practical training methods to deliver exceptional results.",
+    "paragraph2": "His training philosophy centers on holistic wellness—strengthening not just the body, but also building mental resilience and sustainable habits. Whether you're a beginner taking your first steps or an athlete pushing for peak performance, Elishay provides the expertise, motivation, and personalized attention needed to unlock your full potential.",
+    "alt": "Elishay Fitness - Certified Wingate Academy Coach"
+  },
+  "success": {
+    "title": "Success Stories",
+    "subtitle": "Real transformations from real people",
+    "story1": {
+      "caption": "Sarah lost 15kg and gained incredible strength. 'Elishay's personalized approach changed my life completely.'",
+      "alt": "Client transformation success story"
+    },
+    "story2": {
+      "caption": "David achieved his dream physique in 6 months. 'The nutrition plan was a game-changer for my results.'",
+      "alt": "Client transformation success story"
+    },
+    "story3": {
+      "caption": "Rachel built muscle and confidence. 'The digital program fit perfectly into my busy schedule.'",
+      "alt": "Client transformation success story"
+    },
+    "story4": {
+      "caption": "Michael transformed his health and energy levels. 'Professional coaching made all the difference.'",
+      "alt": "Client transformation success story"
+    },
+    "story5": {
+      "caption": "Lisa reached her fitness goals and maintained them. 'Sustainable habits, real results.'",
+      "alt": "Client transformation success story"
+    },
+    "story6": {
+      "caption": "Tom improved his performance and lifestyle. 'The best investment I've made in myself.'",
+      "alt": "Client transformation success story"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "How often should I train?",
+    "a1": "Training frequency depends on your goals, experience level, and recovery capacity. Beginners typically benefit from 3-4 sessions per week, while advanced trainees may train 5-6 times weekly. We'll design a program that matches your schedule and maximizes results.",
+    "q2": "What nutrition plan suits beginners?",
+    "a2": "Beginners should focus on establishing consistent eating habits, balanced macronutrients, and adequate protein intake. We'll create a simple, sustainable meal plan that teaches fundamentals while supporting your training goals. No extreme diets—just smart, practical nutrition.",
+    "q3": "Can I achieve results with digital programs alone?",
+    "a3": "Absolutely! Our digital programs are comprehensive and include detailed instructions, progress tracking, and support. Many clients achieve excellent results remotely. However, combining digital programs with occasional personal training sessions can accelerate progress.",
+    "q4": "How long until I see results?",
+    "a4": "Results vary based on consistency, effort, and individual factors. Most clients notice improvements in energy and strength within 2-4 weeks. Visible body composition changes typically appear after 6-8 weeks of consistent training and proper nutrition. We'll track your progress and adjust as needed.",
+    "q5": "Do you offer nutrition consultations?",
+    "a5": "Yes! Nutrition consultations are available as part of our comprehensive service packages. We'll analyze your current eating habits, create personalized meal plans, and provide ongoing guidance to ensure your nutrition supports your fitness goals effectively."
+  },
+  "tips": {
+    "title": "Pro Tips",
+    "subtitle": "Expert advice for your fitness journey",
+    "tip1": "Consistency beats intensity—regular, moderate training yields better long-term results than sporadic intense sessions.",
+    "tip2": "Prioritize recovery—adequate sleep and rest days are crucial for muscle growth and performance improvement.",
+    "tip3": "Track your progress—keeping a training and nutrition log helps identify what works and keeps you motivated.",
+    "tip4": "Stay hydrated—proper hydration supports performance, recovery, and overall health throughout your training."
+  },
+  "shop": {
+    "title": "Training Packages",
+    "subtitle": "Choose the perfect plan for your goals",
+    "package1": {
+      "name": "12-Week Transformation Package",
+      "description": "Complete personal training program with nutrition guidance. Includes 24 training sessions, meal plan, and ongoing support.",
+      "price": "Contact for pricing",
+      "button": "Order Now"
+    },
+    "package2": {
+      "name": "Monthly Meal Plan Subscription",
+      "description": "Personalized nutrition plans delivered monthly. Includes meal prep guides, shopping lists, and recipe modifications.",
+      "price": "Contact for pricing",
+      "button": "Order Now"
+    },
+    "package3": {
+      "name": "Digital 8-Week Program",
+      "description": "Comprehensive online training program with video instructions, progress tracking, and email support.",
+      "price": "Contact for pricing",
+      "button": "Order Now"
+    },
+    "package4": {
+      "name": "Premium Coaching Package",
+      "description": "All-inclusive: personal training, nutrition plans, digital access, and priority support. Maximum results guaranteed.",
+      "price": "Contact for pricing",
+      "button": "Order Now"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Ready to start your transformation? Let's talk.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message",
+      "nameRequired": "Please enter your name",
+      "emailRequired": "Please enter a valid email",
+      "messageRequired": "Please enter your message",
+      "success": "Thank you! Your message has been sent successfully.",
+      "error": "Something went wrong. Please try again."
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Phone"
+    }
+  },
+  "orderForm": {
+    "title": "Order Package",
+    "name": "Full Name",
+    "email": "Email",
+    "package": "Select Package",
+    "package1": "12-Week Transformation Package",
+    "package2": "Monthly Meal Plan Subscription",
+    "package3": "Digital 8-Week Program",
+    "package4": "Premium Coaching Package",
+    "submit": "Submit Order",
+    "nameRequired": "Please enter your name",
+    "emailRequired": "Please enter a valid email",
+    "packageRequired": "Please select a package",
+    "success": "Thank you! Your order has been submitted. We'll contact you soon.",
+    "error": "Something went wrong. Please try again."
+  },
+  "footer": {
+    "copyright": "© 2025 Elishay Fitness. All rights reserved.",
+    "follow": "Follow Us"
+  },
+  "brand": {
+    "name": "Elishay Fitness"
+  }
+}
+

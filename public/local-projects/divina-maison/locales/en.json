@@ -1,0 +1,451 @@
+{
+  "meta": {
+    "title": "Divina Maison - Luxury Custom Perfumes & Fine Fragrances",
+    "description": "Uncover the perfume that tells your unique story – handcrafted luxury in every note. Premium custom perfumes, luxury dupes, and limited-edition seasonal collections crafted with rare ingredients."
+  },
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "customCreations": "Custom Creations",
+    "dupes": "Luxury Dupes",
+    "collections": "Exclusive Collections",
+    "about": "About Us",
+    "contact": "Contact",
+    "search": "Search",
+    "cart": "Shopping Cart"
+  },
+  "hero": {
+    "title": "Divina Maison",
+    "subtitle": "Your Signature Scent",
+    "description": "Luxury perfumes crafted with precision. Each fragrance is an expression of refined elegance.",
+    "ctaCustomize": "Discover Your Fragrance",
+    "ctaExplore": "View Collection"
+  },
+  "collections": {
+    "title": "Exclusive Collections",
+    "subtitle": "Luxury Personal Fragrances",
+    "winterCollection": "Winter Collection",
+    "winterDescription": "Winter Collection. Rich amber and spice. Elegant. Timeless.",
+    "springComing": "New Spring Collection arriving soon.",
+    "summerComing": "New Summer Collection arriving soon.",
+    "autumnComing": "New Autumn Collection arriving soon.",
+    "learnMore": "Discover More",
+    "shopNow": "Shop Now"
+  },
+  "products": {
+    "amberFrost": {
+      "name": "Amber Frost",
+      "slug": "amber-frost",
+      "type": "Unisex",
+      "vibe": "Hot, soft, slightly smoky. Luxurious and not sweet.",
+      "description": "Amber Frost envelops you in soft winter warmth. Bright clementine and spiced cardamom open on a smoky tea accord, leading to a heart of radiant golden amber and fine incense entwined with sambac jasmine. The drydown reveals creamy Madagascan vanilla and sandalwood with clean musk and a whisper of leather. Luxurious yet never cloying, this unisex blend captures the essence of cozy elegance.",
+      "topNotes": "Clementine, Cardamom, Black Tea",
+      "middleNotes": "Golden Amber, Delicate Incense, Jasmine Sambac",
+      "baseNotes": "Madagascan Vanilla, Sandalwood, Clean Musk, Skin Touch",
+      "intensity": "Moderate",
+      "seasonalFit": "Winter, Cold Weather",
+      "projection": "Balanced",
+      "dayNight": "Day & Evening",
+      "oilRecommendation": "Oil recommended for deeper, longer wear",
+      "emotionalDescription": "This fragrance mirrors your quiet confidence — warm, elegant, and present without effort. Perfect for those who value refined comfort and understated luxury.",
+      "howToWear": "Ideal for daily wear and evening moments. Best in cold weather. Apply to pulse points for balanced projection. Pairs beautifully with warm, cozy layers."
+    },
+    "northernIron": {
+      "name": "Northern Iron",
+      "slug": "northern-iron",
+      "type": "Very Masculine",
+      "vibe": "Dark, dry, forceful. A man of winter.",
+      "description": "Northern Iron is a tribute to rugged winter masculinity. It blasts off with sharp black pepper and aromatic juniper, settling into a smoked heart of vetiver, sage, and cedarwood. The base is powerful and dry – earthy patchouli, grey amber, and raw leather layers intertwine. Dark and authoritative, this bold scent embodies strength and sophistication in the cold.",
+      "topNotes": "Black Pepper, Juniper",
+      "middleNotes": "Smoked Vetiver, Sage, Cedar",
+      "baseNotes": "Dry Patchouli, Gray Amber, Rough Skin",
+      "intensity": "Strong",
+      "seasonalFit": "Winter, Cold Weather",
+      "projection": "Noticeable Trail",
+      "dayNight": "Evening, Special Occasions",
+      "oilRecommendation": "Alcohol recommended for brighter projection",
+      "emotionalDescription": "Your strength speaks through this bold, authoritative scent — powerful and unapologetic. For those who command attention with quiet confidence.",
+      "howToWear": "Perfect for evening and special occasions. Ideal for winter. Apply sparingly to pulse points. Creates a strong, memorable trail."
+    },
+    "deepEmber": {
+      "name": "Deep Ember",
+      "slug": "deep-ember",
+      "type": "Very Masculine",
+      "vibe": "Warm, spicy and deep. Elegant and moderately heavy.",
+      "description": "Deep Ember offers a warm, spicy embrace. The top notes of cinnamon, clove, and bitter orange are rich and heady, giving way to a heart of dark lavender and decadent sweet tobacco set among whispering cashmere woods. Finally, a base of tonka bean, frankincense, and a hint of light oud lingers, creating an elegantly weighty dry-down. This is a bold, sophisticated scent for the modern gentleman.",
+      "topNotes": "Cinnamon, Cloves, Bitter Orange",
+      "middleNotes": "Sweet Tobacco, Dark Lavender, Cashmere Trees",
+      "baseNotes": "Tonka, Frankincense, Light Oud",
+      "intensity": "Strong",
+      "seasonalFit": "Winter, Cold Weather",
+      "projection": "Balanced to Strong",
+      "dayNight": "Evening, Special Occasions",
+      "oilRecommendation": "Oil recommended for deeper, more intimate wear",
+      "emotionalDescription": "Your depth finds its match in this rich, evolving warmth — thoughtful and enveloping. For those who appreciate complexity and sophistication.",
+      "howToWear": "Best for evening and special moments. Perfect for winter. Evolves beautifully on the skin. Layer with warm, textured fabrics."
+    },
+    "velvetSnow": {
+      "name": "Velvet Snow",
+      "slug": "velvet-snow",
+      "type": "Very Feminine",
+      "vibe": "Soft, creamy and pampering. Wrapped feminine winter.",
+      "description": "Velvet Snow is a soft winter reverie. Crisp pear and bergamot open the fragrance with a sparkling coolness. At its heart lies a bouquet of lush Turkish rose and rare white orchid, offering a creamy floral warmth. The base notes – smooth vanilla, soft musk, and creamy sandalwood – feel like cashmere at dusk. Gentle and enveloping, this scent wraps the wearer in a feminine embrace.",
+      "topNotes": "Pear, Bergamot",
+      "middleNotes": "Turkish Rose, White Orchid",
+      "baseNotes": "Vanilla, Soft Musk, Creamy Sandalwood",
+      "intensity": "Moderate",
+      "seasonalFit": "Winter, Cold Weather",
+      "projection": "Intimate to Balanced",
+      "dayNight": "Day & Evening",
+      "oilRecommendation": "Oil recommended for closer, longer-lasting wear",
+      "emotionalDescription": "Your softness and grace are reflected here — gentle, beautiful, and refined. For those who value comfort, beauty, and understated elegance.",
+      "howToWear": "Perfect for daily wear and evening moments. Ideal for winter. Apply to pulse points for intimate projection. Complements soft, luxurious fabrics."
+    },
+    "crimsonNight": {
+      "name": "Crimson Night",
+      "slug": "crimson-night",
+      "type": "Very Feminine",
+      "vibe": "Sensual, warm, dark fruit. Winter nights.",
+      "description": "Crimson Night exudes sensual, dark fruit allure. It bursts open with juicy pomegranate and a playful hint of pink pepper, leading into a rich floral-fruity heart of thick jasmine, opulent black plum, and sweet ylang-ylang. The base is deep and resinous – sweet patchouli, dark amber, and a blend of deep resins – leaving a warm, enchanting trail. This is an evening fragrance for the confident, alluring woman.",
+      "topNotes": "Pomegranate, Pink Pepper",
+      "middleNotes": "Thick Jasmine, Black Plum, Ylang-Ylang",
+      "baseNotes": "Sweet Patchouli, Dark Amber, Winter Resins",
+      "intensity": "Strong",
+      "seasonalFit": "Winter, Evening",
+      "projection": "Noticeable Trail",
+      "dayNight": "Evening, Night",
+      "oilRecommendation": "Oil recommended for deeper, more sensual wear",
+      "emotionalDescription": "Your mysterious allure finds its voice — seductive, confident, and unforgettable. For those who embrace their power and sensuality.",
+      "howToWear": "Perfect for evening and night. Ideal for winter. Apply to pulse points for a memorable trail. Complements dark, elegant evening wear."
+    },
+    "oudMirage": {
+      "name": "Oud Mirage",
+      "slug": "oud-mirage",
+      "type": "Middle Eastern Unisex",
+      "vibe": "Clean, woody, smoky-elegant oud. Deep and impressive.",
+      "description": "Oud Mirage is an elegant, smoky-woody journey. Soft cinnamon and warming cardamom swirl with bitter orange at the top, giving a gentle spice. The heart unfolds with clean Cambodian oud, dry Damask rose petals, and floating wisps of white incense. In the base, dark amber, Lebanese cedar, and a touch of tonka bean meet dry musk, creating an impressive and refined dry-down. This unisex scent feels like a mysterious desert dusk.",
+      "topNotes": "Delicate Cinnamon, Cardamom, Bitter Orange",
+      "middleNotes": "Clean Cambodian Oud, Dry Damask Rose, White Incense",
+      "baseNotes": "Dark Amber, Lebanon Cedar, Light Tonka, Dry Musk",
+      "intensity": "Strong",
+      "seasonalFit": "All Seasons",
+      "projection": "Balanced to Strong",
+      "dayNight": "Day & Evening",
+      "oilRecommendation": "Oil recommended for deeper, more intimate oud experience",
+      "emotionalDescription": "Your thoughtful complexity is captured here — sophisticated, enigmatic, and deeply personal. For those drawn to the exotic and mysterious.",
+      "howToWear": "Versatile for day and evening. Works in all seasons. Apply to pulse points. Evolves beautifully over time. Complements both casual and formal wear."
+    }
+  },
+  "bestsellers": {
+    "title": "Best Sellers",
+    "newArrivals": "New Arrivals"
+  },
+  "quiz": {
+    "title": "Find Your Fragrance",
+    "subtitle": "A Personal Consultation",
+    "description": "Discover the fragrance that tells your unique story. This intimate consultation will help us understand your essence and recommend the perfect scent for you.",
+    "startQuiz": "Begin Your Journey",
+    "shortQuiz": "Quick Discovery",
+    "shortQuizDesc": "5 essential questions for a fast match",
+    "inDepthQuiz": "Comprehensive Consultation",
+    "inDepthQuizDesc": "10 detailed questions for your perfect match",
+    "progress": "Question {current} of {total}",
+    "next": "Continue",
+    "back": "Back",
+    "continue": "Continue",
+    "result": "Your Perfect Match",
+    "resultSubtitle": "We've found the fragrance that speaks to your essence",
+    "recommended": "We recommend",
+    "whyThisFits": "Why this fits you",
+    "viewFragrance": "View Fragrance",
+    "customizeScent": "Customize This Scent",
+    "short": {
+      "q1": {
+        "question": "What kind of presence do you want your fragrance to have?",
+        "answers": [
+          { "text": "Quiet and close to the skin", "value": "intimate" },
+          { "text": "Soft but noticeable", "value": "soft" },
+          { "text": "Confident and elegant", "value": "elegant" },
+          { "text": "Bold, intense, unforgettable", "value": "bold" }
+        ]
+      },
+      "q2": {
+        "question": "Which feeling should your fragrance create first?",
+        "answers": [
+          { "text": "Comfort and warmth", "value": "warm" },
+          { "text": "Fresh confidence", "value": "fresh" },
+          { "text": "Mystery and depth", "value": "mysterious" },
+          { "text": "Sensual attraction", "value": "sensual" }
+        ]
+      },
+      "q3": {
+        "question": "When do you imagine wearing this fragrance the most?",
+        "answers": [
+          { "text": "Daily / work / routine", "value": "daily" },
+          { "text": "Evenings and social moments", "value": "evening" },
+          { "text": "Cold weather / winter", "value": "winter" },
+          { "text": "Special occasions only", "value": "special" }
+        ]
+      },
+      "q4": {
+        "question": "Which scent direction attracts you more instinctively?",
+        "answers": [
+          { "text": "Warm & sweet", "value": "warmSweet" },
+          { "text": "Spicy & smoky", "value": "spicySmoky" },
+          { "text": "Clean & fresh", "value": "cleanFresh" },
+          { "text": "Woody & dry", "value": "woodyDry" }
+        ]
+      },
+      "q5": {
+        "question": "How should your fragrance be perceived by others?",
+        "answers": [
+          { "text": "Subtle and refined", "value": "subtle" },
+          { "text": "Elegant and intriguing", "value": "elegantIntriguing" },
+          { "text": "Strong and confident", "value": "strong" },
+          { "text": "Seductive and addictive", "value": "seductive" }
+        ]
+      }
+    },
+    "long": {
+      "q1": {
+        "question": "What kind of presence do you want your fragrance to have?",
+        "answers": [
+          { "text": "Quiet and close to the skin", "value": "intimate" },
+          { "text": "Soft but noticeable", "value": "soft" },
+          { "text": "Confident and elegant", "value": "elegant" },
+          { "text": "Bold, intense, unforgettable", "value": "bold" }
+        ]
+      },
+      "q2": {
+        "question": "Which feeling should your fragrance create first?",
+        "answers": [
+          { "text": "Comfort and warmth", "value": "warm" },
+          { "text": "Fresh confidence", "value": "fresh" },
+          { "text": "Mystery and depth", "value": "mysterious" },
+          { "text": "Sensual attraction", "value": "sensual" }
+        ]
+      },
+      "q3": {
+        "question": "When do you imagine wearing this fragrance the most?",
+        "answers": [
+          { "text": "Daily / work / routine", "value": "daily" },
+          { "text": "Evenings and social moments", "value": "evening" },
+          { "text": "Cold weather / winter", "value": "winter" },
+          { "text": "Special occasions only", "value": "special" }
+        ]
+      },
+      "q4": {
+        "question": "Which scent direction attracts you more instinctively?",
+        "answers": [
+          { "text": "Warm & sweet", "value": "warmSweet" },
+          { "text": "Spicy & smoky", "value": "spicySmoky" },
+          { "text": "Clean & fresh", "value": "cleanFresh" },
+          { "text": "Woody & dry", "value": "woodyDry" }
+        ]
+      },
+      "q5": {
+        "question": "How should your fragrance be perceived by others?",
+        "answers": [
+          { "text": "Subtle and refined", "value": "subtle" },
+          { "text": "Elegant and intriguing", "value": "elegantIntriguing" },
+          { "text": "Strong and confident", "value": "strong" },
+          { "text": "Seductive and addictive", "value": "seductive" }
+        ]
+      },
+      "q6": {
+        "question": "Which materials feel most \"you\"?",
+        "answers": [
+          { "text": "Vanilla / amber / tonka", "value": "warmBase" },
+          { "text": "Leather / incense / smoke", "value": "darkSmoky" },
+          { "text": "Florals / soft musks", "value": "floralSoft" },
+          { "text": "Woods / oud / resins", "value": "woodyResinous" }
+        ]
+      },
+      "q7": {
+        "question": "Do you prefer your fragrance to evolve over time or stay consistent?",
+        "answers": [
+          { "text": "I like a clear, stable scent", "value": "stable" },
+          { "text": "I love a scent that changes and deepens", "value": "evolving" }
+        ]
+      },
+      "q8": {
+        "question": "How close do you want the fragrance to sit on the skin?",
+        "answers": [
+          { "text": "Very intimate", "value": "veryIntimate" },
+          { "text": "Balanced projection", "value": "balanced" },
+          { "text": "Strong trail", "value": "strongTrail" }
+        ]
+      },
+      "q9": {
+        "question": "Which description feels closest to your personality?",
+        "answers": [
+          { "text": "Calm, thoughtful, grounded", "value": "calm" },
+          { "text": "Confident, precise, powerful", "value": "confident" },
+          { "text": "Soft, emotional, romantic", "value": "romantic" },
+          { "text": "Deep, mysterious, intense", "value": "intense" }
+        ]
+      },
+      "q10": {
+        "question": "Would you rather your fragrance feel…",
+        "answers": [
+          { "text": "Clean and airy", "value": "cleanAiry" },
+          { "text": "Warm and enveloping", "value": "warmEnveloping" }
+        ]
+      }
+    },
+    "results": {
+      "amberFrost": {
+        "title": "Amber Frost",
+        "explanation": "This fragrance mirrors your quiet confidence — warm, elegant, and present without effort."
+      },
+      "northernIron": {
+        "title": "Northern Iron",
+        "explanation": "Your strength speaks through this bold, authoritative scent — powerful and unapologetic."
+      },
+      "deepEmber": {
+        "title": "Deep Ember",
+        "explanation": "Your depth finds its match in this rich, evolving warmth — thoughtful and enveloping."
+      },
+      "velvetSnow": {
+        "title": "Velvet Snow",
+        "explanation": "Your softness and grace are reflected here — gentle, beautiful, and refined."
+      },
+      "crimsonNight": {
+        "title": "Crimson Night",
+        "explanation": "Your mysterious allure finds its voice — seductive, confident, and unforgettable."
+      },
+      "oudMirage": {
+        "title": "Oud Mirage",
+        "explanation": "Your thoughtful complexity is captured here — sophisticated, enigmatic, and deeply personal."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "testimonial1": "I finally found my signature scent with Divina Maison. It's like they read my soul and bottled it – pure luxury in every drop.",
+    "author1": "Sarah K.",
+    "testimonial2": "The custom fragrance experience was incredible. The attention to detail is unmatched, and the result is simply extraordinary.",
+    "author2": "Michael R.",
+    "testimonial3": "These perfumes are pure luxury. Every scent tells a story, and each bottle feels like a treasure crafted just for me.",
+    "author3": "Elena T."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "How does custom fragrance design work?",
+    "a1": "Our custom fragrance process begins with a personalized consultation to understand your preferences and personality. Our master perfumers then craft a unique blend tailored specifically to you, using rare and high-quality ingredients sourced from around the world. The result is a one-of-a-kind fragrance that tells your story.",
+    "q2": "What are dupes?",
+    "a2": "Our luxury dupes are inspired by famous luxury fragrances, offering similar scent profiles at a more accessible price point. They are not exact copies but carefully crafted inspirations that capture the essence and character of the original, allowing you to experience luxury without compromise.",
+    "q3": "How do I take the quiz?",
+    "a3": "Simply click 'Begin Your Journey' on our homepage or visit the Custom Creations section. Answer a few questions about your preferences and style, and we'll recommend the perfect fragrance that speaks to your unique essence.",
+    "q4": "What are the payment options?",
+    "a4": "We accept PayPal, Bit, and Cash on Delivery. Payment details will be confirmed upon order placement, ensuring a seamless and secure transaction.",
+    "q5": "How is shipping handled?",
+    "a5": "We offer free local delivery in Northern Israel (Emek Yizrael area) and free shipping on orders over ₪500. Standard shipping rates apply elsewhere, with careful packaging to preserve the integrity of your luxury fragrances."
+  },
+  "tips": {
+    "title": "Fragrance Tips",
+    "tip1Heading": "Storage",
+    "tip1": "Store perfumes away from light and heat for longevity. Keep them in a cool, dark place to preserve their exquisite character.",
+    "tip2Heading": "Application",
+    "tip2": "Apply to pulse points for the best projection. The warmth of these areas helps the fragrance unfold beautifully throughout the day.",
+    "tip3Heading": "Layering",
+    "tip3": "Layer scents by using matching body products. Create a harmonious fragrance experience that lingers elegantly.",
+    "tip4Heading": "Development",
+    "tip4": "Let the fragrance develop on your skin for 30 minutes before judging. True luxury reveals itself gradually, like a story unfolding."
+  },
+  "shop": {
+    "title": "Shop",
+    "customDesigns": "Custom Designs",
+    "dupes": "Luxury Dupes",
+    "collections": "Seasonal Collections",
+    "addToCart": "Add to Cart",
+    "orderNow": "Order Now",
+    "buyFragrance": "Buy This Fragrance",
+    "formatRecommendation": "Format Recommendation",
+    "howToWear": "How & When to Wear",
+    "readyToOrder": "Ready to Order?",
+    "requestConsultation": "Request Consultation",
+    "genderExpression": "Expression",
+    "intensity": "Intensity",
+    "seasonalFit": "Season",
+    "dayNight": "Timing",
+    "projection": "Projection",
+    "scentProfile": "Scent Profile",
+    "price": "Price",
+    "size": "Size",
+    "type": "Type",
+    "alcoholBased": "Alcohol-based",
+    "oilBased": "Oil-based",
+    "longevity": "Longevity",
+    "notes": "Notes",
+    "topNotes": "Top Notes",
+    "middleNotes": "Middle Notes",
+    "baseNotes": "Base Notes",
+    "youMayAlsoLike": "You May Also Like"
+  },
+  "dupes": {
+    "title": "Luxury Dupes",
+    "subtitle": "Inspired by the world's most iconic fragrances",
+    "disclaimer": "Not an exact copy, but inspired by",
+    "comparison": "Comparison",
+    "original": "Original",
+    "divinaMaison": "Divina Maison Dupe",
+    "keyNotes": "Key Notes",
+    "dupeLongevity": "Longevity",
+    "dupePrice": "Price"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "freeShipping": "Free shipping for orders over ₪500",
+    "total": "Total",
+    "checkout": "Checkout",
+    "continueShopping": "Continue Shopping",
+    "remove": "Remove",
+    "quantity": "Quantity",
+    "coupon": "Coupon Code",
+    "apply": "Apply"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "name": "Full Name",
+    "email": "Email",
+    "address": "Address",
+    "phone": "Phone",
+    "paymentMethod": "Payment Method",
+    "paypal": "PayPal",
+    "bit": "Bit",
+    "cashOnDelivery": "Cash on Delivery",
+    "placeOrder": "Place Order",
+    "required": "Required",
+    "thankYou": "Thank You!",
+    "orderConfirmation": "Your order has been received. We'll contact you shortly to confirm details."
+  },
+  "about": {
+    "title": "About Divina Maison",
+    "story1": "Divina Maison was born from a passion for perfumery and the belief that everyone deserves a signature scent. Each fragrance is crafted in small batches by master perfumers, using rare ingredients to evoke emotion and create lasting memories.",
+    "story2": "We believe in the power of scent to tell stories, express identity, and transform moments into cherished memories. Our commitment to quality and craftsmanship ensures that every bottle represents not just a fragrance, but a personal journey of discovery and elegance."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "phone": "Phone",
+    "emailLabel": "Email"
+  },
+  "footer": {
+    "copyright": "© 2025 Divina Maison. All rights reserved.",
+    "followUs": "Follow Us"
+  },
+  "newsletter": {
+    "title": "Join Our Newsletter",
+    "subtitle": "Get 10% off your first order",
+    "email": "Email Address",
+    "subscribe": "Subscribe",
+    "close": "Close"
+  }
+}

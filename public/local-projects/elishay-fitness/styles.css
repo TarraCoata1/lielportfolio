@@ -1,0 +1,314 @@
+/* # Elishay Fitness - Custom Styles */
+/* Premium black, white, and gold theme with full RTL support */
+
+/* # Color Definitions */
+:root {
+    --gold: #CFA55B;
+    --gold-dark: #B8944F;
+    --gold-light: #E5B870;
+    --black: #000000;
+    --white: #FFFFFF;
+    --gray-dark: #1a1a1a;
+    --gray-medium: #4a4a4a;
+    --gray-light: #e5e5e5;
+}
+
+/* # Tailwind Custom Colors */
+@layer utilities {
+    .text-gold {
+        color: var(--gold);
+    }
+    
+    .bg-gold {
+        background-color: var(--gold);
+    }
+    
+    .border-gold {
+        border-color: var(--gold);
+    }
+    
+    .hover\:bg-gold\/90:hover {
+        background-color: var(--gold-dark);
+    }
+    
+    .hover\:text-gold\/80:hover {
+        color: var(--gold-light);
+    }
+}
+
+/* # Base Typography */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    /* Prevent layout shifts during language switch */
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* # Prevent layout shifts on language switch */
+html {
+    scroll-behavior: smooth;
+}
+
+/* # Ensure consistent spacing - prevent jumps */
+* {
+    box-sizing: border-box;
+}
+
+/* # Prevent font flashing */
+body, body.rtl {
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* # Hebrew Font Support */
+body.rtl {
+    font-family: 'Heebo', sans-serif;
+}
+
+/* # Navigation Styles */
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.nav-link:hover {
+    color: var(--gold);
+}
+
+/* # Navigation link underline animation */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--gold);
+    transition: width 0.3s ease;
+}
+
+body.rtl .nav-link::after {
+    left: auto;
+    right: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* # Language Switcher Buttons */
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.lang-btn:hover {
+    color: var(--gold);
+}
+
+.lang-btn.active {
+    color: var(--gold);
+}
+
+/* # CTA Button Hover Effects */
+.cta-button {
+    box-shadow: 0 4px 15px rgba(207, 165, 91, 0.3);
+}
+
+.cta-button:hover {
+    box-shadow: 0 6px 20px rgba(207, 165, 91, 0.5);
+}
+
+/* # Service Cards Hover Effect */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* # Success Story Cards */
+.success-card img {
+    transition: transform 0.3s ease;
+}
+
+.success-card:hover img {
+    transform: scale(1.05);
+}
+
+/* # Tip Cards */
+.tip-card {
+    transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-3px);
+}
+
+/* # Package Cards */
+.package-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-card:hover {
+    box-shadow: 0 10px 30px rgba(207, 165, 91, 0.2);
+}
+
+/* # FAQ Accordion */
+.faq-question {
+    cursor: pointer;
+    user-select: none;
+}
+
+.faq-answer {
+    transition: all 0.3s ease;
+}
+
+/* # Form Input Focus Styles */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--gold) !important;
+    box-shadow: 0 0 0 3px rgba(207, 165, 91, 0.1);
+}
+
+/* # Modal Styles */
+#order-modal {
+    backdrop-filter: blur(4px);
+}
+
+/* # RTL Specific Adjustments */
+body.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+body.rtl .container {
+    direction: rtl;
+}
+
+/* # RTL Navigation Adjustments */
+body.rtl .nav-link::after {
+    right: 0;
+    left: auto;
+}
+
+/* # RTL Form Adjustments */
+body.rtl input,
+body.rtl textarea,
+body.rtl select {
+    text-align: right;
+    direction: rtl;
+}
+
+body.rtl .faq-question {
+    text-align: right !important;
+    flex-direction: row-reverse;
+}
+
+body.rtl .faq-question span {
+    text-align: right;
+}
+
+body.rtl .faq-question svg {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* # RTL Additional Spacing Fixes */
+body.rtl .space-x-2 > * + * {
+    margin-right: 0.5rem;
+    margin-left: 0;
+}
+
+body.rtl .space-x-4 > * + * {
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+body.rtl .space-x-6 > * + * {
+    margin-right: 1.5rem;
+    margin-left: 0;
+}
+
+body.rtl .space-x-8 > * + * {
+    margin-right: 2rem;
+    margin-left: 0;
+}
+
+/* # RTL Padding/Margin Utilities */
+body.rtl .pl-4 {
+    padding-right: 1rem;
+    padding-left: 0;
+}
+
+body.rtl .pr-4 {
+    padding-left: 1rem;
+    padding-right: 0;
+}
+
+/* # Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.25rem !important;
+    }
+}
+
+/* # Smooth Transitions - Exclude layout-affecting properties during language switch */
+* {
+    transition-property: color, background-color, border-color, transform, box-shadow, opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
+
+/* # Prevent transitions on direction change to avoid jumps */
+html[dir="rtl"], html[dir="ltr"] {
+    transition: none !important;
+}
+
+body.rtl, body:not(.rtl) {
+    transition: font-family 0s, direction 0s;
+}
+
+/* # Accessibility - Focus Styles */
+a:focus,
+button:focus {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+}
+
+/* # Loading State (for future use) */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* # Print Styles */
+@media print {
+    .nav-link,
+    .lang-btn,
+    .cta-button,
+    .order-btn,
+    #mobile-menu-btn {
+        display: none;
+    }
+}
+

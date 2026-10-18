@@ -1,0 +1,29 @@
+# Liel Wainberg
+
+> First-party portfolio of Liel Wainberg, a Jerusalem-based developer and UX/UI designer who builds software, systems, applications, digital products, e-commerce, integrations, and automation. The same person also works in canine behavior and hospitality through LW.LIQUID.
+
+## Pages
+
+- [Home](/): Profile, capabilities, selected projects, canine work, hospitality work, and direct contact.
+- [Software and digital products](/web): Liel's development, UX/UI, architecture, and delivery work.
+- [Canine behavior](/dogs): Liel's approach to dog training and behavior.
+- [LW.LIQUID](/bar): Liel's mixology, private hosting, and bar operations work.
+
+## Project case studies
+
+- [Magen Netivim](/projects/magen-netivim)
+- [Kesem Shel Tzvaim](/projects/kesem-shel-tzvaim)
+- [The Dairy Corner](/projects/dairy-corner)
+- [Dor Hadad DJ](/projects/dor-hadad)
+- [TarraCoata](/projects/tarracoata)
+- [Abramov](/projects/abramov)
+- [YAN Tattoo Studio](/projects/yan-tattoo)
+- [XY Marketing](/projects/xy-marketing)
+- [Reut Jewelry](/projects/reut-jewelry)
+- [Abramov Core](/projects/abramov-core)
+- [Yahalom Glass Emporium](/projects/yahalom-glass)
+- [Tzitzuim Premium Builds](/projects/tzitzuim)
+- [EMS Impact Elite](/projects/ems-impact)
+- [Grizzly Forge](/projects/grizzly-gym)
+- [TechHub](/projects/adscomp)
+- [Mandu Vintage Vibe](/projects/mandu-bar)

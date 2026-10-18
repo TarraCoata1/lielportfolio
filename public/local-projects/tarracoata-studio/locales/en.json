@@ -1,0 +1,296 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "process": "Process",
+    "portfolio": "Portfolio",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "toggleMenu": "Toggle menu"
+  },
+  "hero": {
+    "title": "Strategic Digital Partners",
+    "titleAccent": "Built for Results",
+    "subtitle": "We partner with select businesses to create premium digital experiences that drive measurable growth. Exclusive focus. Exceptional outcomes. Precision over volume.",
+    "ctaPrimary": "Start Your Project",
+    "ctaSecondary": "View Our Work"
+  },
+  "services": {
+    "title": "Core Services",
+    "subtitle": "Strategic solutions designed for clarity, performance, and authority",
+    "strategy": {
+      "title": "Strategy & UX",
+      "description": "Research-driven user experience design that transforms visitors into customers. We map user journeys, eliminate friction points, and create intuitive flows that align with your business objectives and drive measurable conversions.",
+      "learnMore": "Learn More"
+    },
+    "webDev": {
+      "title": "Web Design & Development",
+      "description": "Custom websites engineered for performance, scalability, and conversion. Built with clean code, optimized for speed, and designed to work flawlessly across all devices. Your digital foundation, built to last.",
+      "learnMore": "Learn More"
+    },
+    "branding": {
+      "title": "Brand Identity",
+      "description": "Visual language and digital presence that communicates your values and differentiates your brand in the market. Cohesive identity systems that scale seamlessly across all touchpoints and channels.",
+      "learnMore": "Learn More"
+    },
+    "optimization": {
+      "title": "Conversion & Optimization",
+      "description": "Technical SEO, performance optimization, and conversion rate improvements backed by data. We enhance visibility, speed, and measurable business results that impact your bottom line.",
+      "learnMore": "Learn More"
+    },
+    "support": {
+      "title": "Ongoing Support",
+      "description": "Long-term partnerships with proactive maintenance, strategic updates, and expert guidance. We ensure your digital presence evolves with your business and continues to perform at peak levels.",
+      "learnMore": "Learn More"
+    }
+  },
+  "about": {
+    "title": "About TarraCoata Studio",
+    "paragraph1": "TarraCoata Studio operates as a strategic digital partner, not just a development team. We focus on fewer clients with higher quality outcomes, prioritizing precision, measurable results, and long-term value over volume. Our approach is rooted in design systems, clean code architecture, and data-driven decision making that delivers exceptional digital experiences.",
+    "paragraph2": "We work with businesses that understand the difference between a website and a strategic digital asset. Our clients value clarity, performance, and authority—and we deliver exactly that. Every project is an opportunity to build something exceptional, something that scales, and something that converts visitors into customers.",
+    "imageAlt": "TarraCoata Studio team collaboration"
+  },
+  "process": {
+    "title": "How We Work",
+    "subtitle": "A proven workflow that reduces risk and ensures clarity at every step",
+    "step1": {
+      "title": "Discovery & Strategy",
+      "description": "We begin by deeply understanding your business, goals, target audience, and competitive landscape. This strategic foundation ensures every decision aligns with your objectives and sets the stage for measurable success.",
+      "benefit": "Client Benefit: Clear roadmap, shared vision, and strategic alignment"
+    },
+    "step2": {
+      "title": "UX/UI Planning",
+      "description": "User flows, wireframes, and design systems are developed based on research, best practices, and user insights. We prioritize structure and functionality before aesthetics to ensure optimal user experience.",
+      "benefit": "Client Benefit: Reduced revisions, faster development, and user-focused design"
+    },
+    "step3": {
+      "title": "Design & Development",
+      "description": "Visual design meets clean, performant code. Regular check-ins and transparent communication ensure alignment throughout the process, allowing for iterative improvements and early feedback.",
+      "benefit": "Client Benefit: Transparent progress, early feedback, and high-quality deliverables"
+    },
+    "step4": {
+      "title": "Testing & Optimization",
+      "description": "Comprehensive cross-browser testing, performance audits, and SEO optimization ensure your site performs flawlessly at launch. We identify and resolve issues before they impact your users.",
+      "benefit": "Client Benefit: Launch-ready, optimized product with zero surprises"
+    },
+    "step5": {
+      "title": "Launch & Support",
+      "description": "Smooth deployment, comprehensive documentation, and ongoing support ensure you're equipped to succeed long-term. We're your partner beyond launch, committed to your continued growth.",
+      "benefit": "Client Benefit: Long-term partnership, peace of mind, and continuous improvement"
+    }
+  },
+  "portfolio": {
+    "title": "Case Studies",
+    "subtitle": "Real problems solved with measurable results",
+    "viewDetails": "View Details",
+    "projects": {
+      "1": {
+        "category": "E-commerce",
+        "title": "Premium Retail Platform",
+        "description": "Redesigned checkout flow reduced cart abandonment by 34% and increased conversion rate by 28% through strategic UX optimization.",
+        "challenge": "High cart abandonment rate and low conversion on mobile devices were impacting revenue and customer satisfaction.",
+        "solution": "Redesigned checkout flow with progressive disclosure, simplified forms, and mobile-first optimization. Implemented trust indicators, streamlined payment process, and enhanced user guidance throughout the journey.",
+        "outcome": "Cart abandonment reduced by 34%, conversion rate increased by 28%, mobile revenue up 45%, and customer satisfaction scores improved significantly."
+      },
+      "2": {
+        "category": "SaaS",
+        "title": "Analytics Dashboard",
+        "description": "Complex data visualization made intuitive and actionable. User engagement increased 45% and support tickets decreased by 60%.",
+        "challenge": "Complex data visualization was overwhelming users, leading to low engagement, high support ticket volume, and reduced product adoption.",
+        "solution": "Redesigned dashboard with intuitive data hierarchy, customizable widgets, and interactive visualizations. Added comprehensive onboarding flow and contextual help to guide users effectively.",
+        "outcome": "User engagement increased 45%, support tickets decreased by 60%, daily active users up 38%, and product satisfaction scores reached new highs."
+      },
+      "3": {
+        "category": "Corporate",
+        "title": "Enterprise Website",
+        "description": "Complete brand refresh and website rebuild. Page load speed improved 73%, organic traffic increased 52% in 6 months.",
+        "challenge": "Outdated brand presence, slow load times, and poor SEO performance were hindering growth and brand perception in the market.",
+        "solution": "Complete brand refresh with modern design system, comprehensive performance optimization, and strategic SEO implementation. Rebuilt with clean architecture and scalable infrastructure.",
+        "outcome": "Page load speed improved 73%, organic traffic increased 52% in 6 months, brand recognition significantly enhanced, and lead generation up 40%."
+      },
+      "4": {
+        "category": "Marketing",
+        "title": "High-Converting Landing Page",
+        "description": "Conversion-focused design and strategic copy optimization. Lead generation increased by 89% while reducing cost per acquisition by 41%.",
+        "challenge": "Low conversion rate on campaign landing pages and high cost per acquisition were limiting marketing ROI and growth potential.",
+        "solution": "Conversion-focused design with clear value proposition, strategic social proof placement, and optimized form flow. Conducted A/B testing across multiple variations to maximize performance.",
+        "outcome": "Lead generation increased by 89%, cost per acquisition reduced by 41%, ROI improved 3x, and campaign effectiveness reached new benchmarks."
+      },
+      "5": {
+        "category": "Branding",
+        "title": "Complete Brand Identity",
+        "description": "Comprehensive visual identity system and cohesive digital presence. Brand recognition improved significantly across all touchpoints and channels.",
+        "challenge": "Inconsistent brand presence across touchpoints and unclear brand positioning were diluting brand value and market recognition.",
+        "solution": "Developed comprehensive brand identity system including logo, color palette, typography, and brand guidelines. Applied consistently across all digital touchpoints and marketing channels.",
+        "outcome": "Brand recognition improved significantly, consistent messaging across all channels, stronger market positioning, and increased brand trust and loyalty."
+      },
+      "6": {
+        "category": "Mobile",
+        "title": "Mobile-First Platform",
+        "description": "Responsive design and comprehensive mobile optimization. Mobile conversion rate increased by 67% and user satisfaction scores improved dramatically.",
+        "challenge": "Poor mobile experience was leading to low mobile conversion rates, high bounce rates, and lost revenue opportunities.",
+        "solution": "Complete mobile optimization with responsive design, touch-friendly interactions, and mobile-specific features. Performance optimization for mobile networks and enhanced user experience throughout.",
+        "outcome": "Mobile conversion rate increased by 67%, user satisfaction scores improved dramatically, mobile traffic engagement up 52%, and mobile revenue became a primary growth driver."
+      }
+    },
+    "modal": {
+      "challenge": "Challenge",
+      "solution": "Solution",
+      "outcome": "Outcome",
+      "close": "Close modal"
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Transparent, value-driven pricing built for performance — not page count.",
+    "starter": {
+      "title": "Starter Website",
+      "startingFrom": "Starting from",
+      "price": "$3,500",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "features": {
+        "1": "Up to 5 pages",
+        "2": "Responsive design",
+        "3": "Basic SEO setup",
+        "4": "Contact form integration",
+        "5": "1 month support"
+      },
+      "cta": "Start Your Project"
+    },
+    "business": {
+      "title": "Business Website",
+      "badge": "Chosen by growth-focused businesses",
+      "startingFrom": "Starting from",
+      "price": "$8,500",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "features": {
+        "1": "Up to 15 pages",
+        "2": "Custom design & development",
+        "3": "Advanced SEO optimization",
+        "4": "Content management system",
+        "5": "Performance optimization",
+        "6": "3 months support"
+      },
+      "cta": "Start Your Project"
+    },
+    "premium": {
+      "title": "Premium Custom Solution",
+      "startingFrom": "Custom",
+      "price": "Quote",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "features": {
+        "1": "Unlimited pages",
+        "2": "Fully custom solution",
+        "3": "E-commerce integration",
+        "4": "Advanced features & APIs",
+        "5": "Ongoing partnership",
+        "6": "Priority support"
+      },
+      "cta": "Start Your Project"
+    },
+    "note": "All plans include strategic consulting, structured planning, and clear communication."
+  },
+  "authority": {
+    "title": "Why TarraCoata",
+    "values": {
+      "title": "Studio Values",
+      "description": "Quality over quantity. We intentionally work with fewer clients to deliver exceptional results. Every project receives the dedicated attention, strategic thinking, and precision it deserves."
+    },
+    "quality": {
+      "title": "Quality Standards",
+      "description": "Clean code, performance optimization, and accessibility are non-negotiable. We build for the long term, not quick wins. Every line of code, every design decision, and every strategic choice is made with your long-term success in mind."
+    },
+    "communication": {
+      "title": "Communication Principles",
+      "description": "Clear, regular updates. No surprises. You'll always know where your project stands, what's happening next, and how decisions are being made. Transparent communication is the foundation of trust."
+    },
+    "longterm": {
+      "title": "Long-Term Mindset",
+      "description": "We're not here for one-off projects. We build lasting partnerships. Your success is our success, and we're genuinely invested in your long-term growth, evolution, and market position."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": {
+      "1": {
+        "question": "How long does a website project typically take?",
+        "answer": "Timeline varies by project scope and complexity. A starter website typically takes 4-6 weeks, while a business website ranges from 8-12 weeks. Premium custom solutions are quoted individually based on specific requirements and scope. We provide detailed timelines and milestones during the discovery phase so you know exactly what to expect."
+      },
+      "2": {
+        "question": "Do you offer ongoing support after launch?",
+        "answer": "Absolutely. All projects include a support period (varies by package). We also offer comprehensive ongoing maintenance and support plans for long-term partnerships. This includes updates, security patches, content changes, performance monitoring, and strategic guidance as your business evolves."
+      },
+      "3": {
+        "question": "Is the website SEO-ready at launch?",
+        "answer": "Yes, every website includes comprehensive technical SEO setup: proper heading structure, optimized meta tags, alt text for images, XML sitemap, and performance optimization. We ensure your site is search-engine friendly from day one. Ongoing SEO strategy, content optimization, and performance tracking can be discussed as part of our support services."
+      },
+      "4": {
+        "question": "Can I manage content myself after launch?",
+        "answer": "Yes. Business and Premium packages include a content management system (CMS) that allows you to update content easily without technical knowledge. We provide comprehensive training and documentation so you can manage your site independently. We're always available for support when you need assistance or want to make more complex changes."
+      },
+      "5": {
+        "question": "What makes TarraCoata Studio different?",
+        "answer": "We focus on fewer clients with higher quality outcomes. Our approach combines strategic thinking, clean code architecture, and measurable results. We're not freelancers—we're strategic partners invested in your long-term success. Every decision is data-driven, aligned with your business objectives, and designed to deliver exceptional value."
+      },
+      "6": {
+        "question": "Who is this studio NOT for?",
+        "answer": "We're not the right fit if you're looking for the cheapest option, need something done in 48 hours, or want a template with minimal customization. We work with clients who value quality, understand the importance of strategy, and are committed to building something exceptional that drives real business results."
+      },
+      "7": {
+        "question": "Can you scale with my business?",
+        "answer": "Absolutely. We build with scalability in mind from day one. Whether you're starting small or need enterprise-level solutions, our architecture and approach support growth. We design systems that can evolve with your business needs, handle increased traffic, and adapt to new requirements over time."
+      },
+      "8": {
+        "question": "How involved do I need to be during the process?",
+        "answer": "We need your input during key phases: discovery (to understand your goals and vision), design reviews (to ensure alignment with your brand), and content provision. Beyond that, we handle the heavy lifting. Regular check-ins keep you informed without requiring constant involvement. We respect your time and ensure the process is efficient and transparent."
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's Build Something Exceptional",
+    "subtitle": "Ready to transform your digital presence? Share your vision and we'll respond within 24 hours with a strategic proposal.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "projectType": "Project Type",
+      "projectTypePlaceholder": "Select a project type",
+      "message": "Message",
+      "messagePlaceholder": "Share your goals, current challenges, and desired results so we can propose the perfect solution for your needs.",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you! Your message has been sent successfully. We'll respond within 24 hours with a strategic proposal tailored to your needs.",
+      "error": "Something went wrong. Please try again later or contact us directly.",
+      "required": "Please fill in all required fields.",
+      "invalidEmail": "Please enter a valid email address.",
+      "networkError": "Network error. Please check your connection and try again."
+    },
+    "projectTypes": {
+      "website": "Website Design & Development",
+      "uxui": "UX/UI Design",
+      "branding": "Brand Identity",
+      "landing": "Landing Page",
+      "ecommerce": "E-commerce Solution",
+      "seo": "SEO & Optimization",
+      "other": "Other"
+    }
+  },
+  "footer": {
+    "tagline": "Strategic digital partners focused on quality, precision, and long-term value.",
+    "quickLinks": "Quick Links",
+    "connect": "Connect",
+    "copyright": "© 2025 TarraCoata Studio. All rights reserved.",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "meta": {
+    "title": "TarraCoata Studio - Premium Digital Solutions",
+    "description": "TarraCoata Studio - Premium digital studio specializing in Website Design, Web Development, UX/UI, Branding, and Digital Solutions. Strategic partners for exceptional digital experiences.",
+    "keywords": "web design, web development, UX/UI design, branding, digital solutions, premium web agency",
+    "brandName": "TarraCoata Studio"
+  }
+}

@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TarraCoata Studio - Premium digital studio specializing in Website Design, Web Development, UX/UI, Branding, and Digital Solutions. Strategic partners for exceptional digital experiences.">
+    <meta name="keywords" content="web design, web development, UX/UI design, branding, digital solutions, premium web agency, #WebDesign, #WebDevelopment, #UXUI, #DigitalStudio, #Branding">
+    <meta property="og:title" content="TarraCoata Studio - Premium Digital Solutions">
+    <meta property="og:description" content="Strategic digital partners focused on quality, precision, and long-term value. Website Design, Development, UX/UI, and Branding.">
+    <meta property="og:type" content="website">
+    <title>TarraCoata Studio - Premium Digital Solutions</title>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "TarraCoata Studio",
+        "description": "Premium digital studio specializing in Website Design, Web Development, UX/UI, Branding, and Digital Solutions",
+        "url": "https://tarracoata.com",
+        "email": "tarracoata@gmail.com",
+        "telephone": "+972546969367",
+        "areaServed": "Worldwide",
+        "serviceType": ["Web Design", "Web Development", "UX/UI Design", "Branding", "Digital Solutions"]
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy': {
+                            900: '#0a1929',
+                            800: '#132f4c',
+                            700: '#1e3a5f',
+                        },
+                        'gold': '#d4af37',
+                        'gold-light': '#e5c158',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="bg-navy-900 text-white font-sans">
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-gold/10 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="#home" class="text-2xl font-bold font-montserrat text-gold hover:text-gold-light transition-colors" data-i18n="meta.brandName">
+                    TarraCoata Studio
+                </a>
+                
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex items-center space-x-8">
+                    <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                    <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+                    <li><a href="#process" class="nav-link" data-i18n="nav.process">Process</a></li>
+                    <li><a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li><a href="#pricing" class="nav-link" data-i18n="nav.pricing">Pricing</a></li>
+                    <li><a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                    <!-- Language Switcher -->
+                    <li class="lang-switcher-container">
+                        <div class="lang-switcher" role="button" aria-label="Select language" tabindex="0">
+                            <span class="lang-switcher-current"></span>
+                            <span class="lang-switcher-current-name">EN</span>
+                            <svg class="lang-switcher-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                        <div class="lang-switcher-dropdown hidden">
+                            <button class="lang-switcher-option" data-lang="en" aria-label="English">
+                                <span class="lang-switcher-flag"></span>
+                                <span>English</span>
+                            </button>
+                            <button class="lang-switcher-option" data-lang="he" aria-label="Hebrew">
+                                <span class="lang-switcher-flag"></span>
+                                <span>עברית</span>
+                            </button>
+                            <button class="lang-switcher-option" data-lang="es" aria-label="Spanish">
+                                <span class="lang-switcher-flag"></span>
+                                <span>Español</span>
+                            </button>
+                            <button class="lang-switcher-option" data-lang="ru" aria-label="Russian">
+                                <span class="lang-switcher-flag"></span>
+                                <span>Русский</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gold hover:text-gold-light transition-colors" aria-label="Toggle menu" data-i18n-aria-label="nav.toggleMenu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <ul class="flex flex-col space-y-4">
+                    <li><a href="#home" class="nav-link block" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#about" class="nav-link block" data-i18n="nav.about">About</a></li>
+                    <li><a href="#services" class="nav-link block" data-i18n="nav.services">Services</a></li>
+                    <li><a href="#process" class="nav-link block" data-i18n="nav.process">Process</a></li>
+                    <li><a href="#portfolio" class="nav-link block" data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li><a href="#pricing" class="nav-link block" data-i18n="nav.pricing">Pricing</a></li>
+                    <li><a href="#faq" class="nav-link block" data-i18n="nav.faq">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link block" data-i18n="nav.contact">Contact</a></li>
+                    <!-- Mobile Language Switcher -->
+                    <li class="lang-switcher-container-mobile">
+                        <div class="lang-switcher" role="button" aria-label="Select language" tabindex="0">
+                            <span class="lang-switcher-current"></span>
+                            <span class="lang-switcher-current-name">EN</span>
+                            <svg class="lang-switcher-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                        <div class="lang-switcher-dropdown hidden">
+                            <button class="lang-switcher-option" data-lang="en" aria-label="English">
+                                <span class="lang-switcher-flag"></span>
+                                <span>English</span>
+                            </button>
+                            <button class="lang-switcher-option" data-lang="he" aria-label="Hebrew">
+                                <span class="lang-switcher-flag"></span>
+                                <span>עברית</span>
+                            </button>
+                            <button class="lang-switcher-option" data-lang="es" aria-label="Spanish">
+                                <span class="lang-switcher-flag"></span>
+                                <span>Español</span>
+                            </button>
+                            <button class="lang-switcher-option" data-lang="ru" aria-label="Russian">
+                                <span class="lang-switcher-flag"></span>
+                                <span>Русский</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900">
+            <div class="absolute inset-0 opacity-20" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1920&q=80'); background-size: cover; background-position: center;"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold font-montserrat mb-6 leading-tight">
+                <span data-i18n="hero.title">Strategic Digital Partners</span>
+                <span class="block text-gold mt-2" data-i18n="hero.titleAccent">Built for Results</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed" data-i18n="hero.subtitle">
+                We design and develop premium digital experiences that drive measurable outcomes. 
+                Fewer clients, higher quality. Precision over volume.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="btn-primary" data-i18n="hero.ctaPrimary">Start a Project</a>
+                <a href="#portfolio" class="btn-secondary" data-i18n="hero.ctaSecondary">View Work</a>
+            </div>
+        </div>
+        
+        <!-- Gold Accent Line -->
+        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold to-transparent"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-navy-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold font-montserrat mb-4" data-i18n="services.title">Core Services</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto" data-i18n="services.subtitle">
+                    Strategic solutions designed for clarity, performance, and authority
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Strategy & UX -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg class="w-12 h-12 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold font-montserrat mb-3" data-i18n="services.strategy.title">Strategy & UX</h3>
+                    <p class="text-gray-300 mb-4" data-i18n="services.strategy.description">
+                        Research-driven user experience design that aligns with business objectives. 
+                        We map user journeys, identify friction points, and create intuitive flows 
+                        that convert visitors into customers.
+                    </p>
+                    <a href="#contact" class="text-gold hover:text-gold-light transition-colors font-semibold" data-i18n="services.strategy.learnMore">
+                        Learn More →
+                    </a>
+                </div>
+                
+                <!-- Service 2: Web Design & Development -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg class="w-12 h-12 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold font-montserrat mb-3" data-i18n="services.webDev.title">Web Design & Development</h3>
+                    <p class="text-gray-300 mb-4" data-i18n="services.webDev.description">
+                        Custom websites built for performance, scalability, and conversion. 
+                        Clean code, fast load times, and responsive design that works flawlessly 
+                        across all devices and browsers.
+                    </p>
+                    <a href="#contact" class="text-gold hover:text-gold-light transition-colors font-semibold" data-i18n="services.webDev.learnMore">
+                        Learn More →
+                    </a>
+                </div>
+                
+                <!-- Service 3: Brand Identity -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg class="w-12 h-12 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold font-montserrat mb-3" data-i18n="services.branding.title">Brand Identity</h3>
+                    <p class="text-gray-300 mb-4" data-i18n="services.branding.description">
+                        Visual language, logos, and digital presence that communicate your values 
+                        and differentiate your brand. Cohesive identity systems that scale across 
+                        all touchpoints.
+                    </p>
+                    <a href="#contact" class="text-gold hover:text-gold-light transition-colors font-semibold" data-i18n="services.branding.learnMore">
+                        Learn More →
+                    </a>
+                </div>
+                
+                <!-- Service 4: Conversion & Optimization -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg class="w-12 h-12 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold font-montserrat mb-3" data-i18n="services.optimization.title">Conversion & Optimization</h3>
+                    <p class="text-gray-300 mb-4" data-i18n="services.optimization.description">
+                        Technical SEO, speed optimization, and conversion rate improvements. 
+                        Data-driven enhancements that increase visibility, performance, and 
+                        measurable business results.
+                    </p>
+                    <a href="#contact" class="text-gold hover:text-gold-light transition-colors font-semibold" data-i18n="services.optimization.learnMore">
+                        Learn More →
+                    </a>
+                </div>
+                
+                <!-- Service 5: Ongoing Support -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg class="w-12 h-12 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold font-montserrat mb-3" data-i18n="services.support.title">Ongoing Support</h3>
+                    <p class="text-gray-300 mb-4" data-i18n="services.support.description">
+                        Long-term partnerships with maintenance, updates, and strategic guidance. 
+                        We ensure your digital presence evolves with your business and continues 
+                        to perform at the highest level.
+                    </p>
+                    <a href="#contact" class="text-gold hover:text-gold-light transition-colors font-semibold" data-i18n="services.support.learnMore">
+                        Learn More →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-navy-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold font-montserrat mb-4" data-i18n="about.title">About TarraCoata Studio</h2>
+                    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="TarraCoata Studio team collaboration" class="rounded-lg shadow-2xl" data-i18n-alt="about.imageAlt">
+                    </div>
+                    <div class="space-y-6">
+                        <p class="text-lg text-gray-300 leading-relaxed" data-i18n="about.paragraph1">
+                            TarraCoata Studio operates as a strategic digital partner, not just a development team. 
+                            We focus on fewer clients with higher quality outcomes, prioritizing precision, 
+                            measurable results, and long-term value over volume. Our approach is rooted in 
+                            design systems, clean code architecture, and data-driven decision making.
+                        </p>
+                        <p class="text-lg text-gray-300 leading-relaxed" data-i18n="about.paragraph2">
+                            We work with businesses that understand the difference between a website and a 
+                            strategic digital asset. Our clients value clarity, performance, and authority— 
+                            and we deliver exactly that. Every project is an opportunity to build something 
+                            exceptional, something that scales, and something that converts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-24 bg-navy-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold font-montserrat mb-4" data-i18n="process.title">How We Work</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto" data-i18n="process.subtitle">
+                    A proven workflow that reduces risk and ensures clarity at every step
+                </p>
+            </div>
+            
+            <div class="max-w-5xl mx-auto">
+                <!-- Process Timeline -->
+                <div class="space-y-12">
+                    <!-- Step 1 -->
+                    <div class="process-step">
+                        <div class="process-number">01</div>
+                        <div class="process-content">
+                            <h3 class="text-2xl font-bold font-montserrat mb-3" data-i18n="process.step1.title">Discovery & Strategy</h3>
+                            <p class="text-gray-300 mb-2" data-i18n="process.step1.description">
+                                We begin by understanding your business, goals, and audience. This foundation 
+                                ensures every decision aligns with your objectives.
+                            </p>
+                            <p class="text-gold text-sm font-semibold" data-i18n="process.step1.benefit">Client Benefit: Clear roadmap and shared vision</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="process-step">
+                        <div class="process-number">02</div>
+                        <div class="process-content">
+                            <h3 class="text-2xl font-bold font-montserrat mb-3" data-i18n="process.step2.title">UX/UI Planning</h3>
+                            <p class="text-gray-300 mb-2" data-i18n="process.step2.description">
+                                User flows, wireframes, and design systems are developed based on research and 
+                                best practices. Structure before aesthetics.
+                            </p>
+                            <p class="text-gold text-sm font-semibold" data-i18n="process.step2.benefit">Client Benefit: Reduced revisions and faster development</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="process-step">
+                        <div class="process-number">03</div>
+                        <div class="process-content">
+                            <h3 class="text-2xl font-bold font-montserrat mb-3" data-i18n="process.step3.title">Design & Development</h3>
+                            <p class="text-gray-300 mb-2" data-i18n="process.step3.description">
+                                Visual design meets clean, performant code. Regular check-ins ensure alignment 
+                                and allow for iterative improvements.
+                            </p>
+                            <p class="text-gold text-sm font-semibold" data-i18n="process.step3.benefit">Client Benefit: Transparent progress and early feedback</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="process-step">
+                        <div class="process-number">04</div>
+                        <div class="process-content">
+                            <h3 class="text-2xl font-bold font-montserrat mb-3" data-i18n="process.step4.title">Testing & Optimization</h3>
+                            <p class="text-gray-300 mb-2" data-i18n="process.step4.description">
+                                Cross-browser testing, performance audits, and SEO optimization ensure your 
+                                site performs flawlessly at launch.
+                            </p>
+                            <p class="text-gold text-sm font-semibold" data-i18n="process.step4.benefit">Client Benefit: Launch-ready, optimized product</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="process-step">
+                        <div class="process-number">05</div>
+                        <div class="process-content">
+                            <h3 class="text-2xl font-bold font-montserrat mb-3" data-i18n="process.step5.title">Launch & Support</h3>
+                            <p class="text-gray-300 mb-2" data-i18n="process.step5.description">
+                                Smooth deployment, documentation, and ongoing support. We ensure you're 
+                                equipped to succeed long-term.
+                            </p>
+                            <p class="text-gold text-sm font-semibold" data-i18n="process.step5.benefit">Client Benefit: Long-term partnership and peace of mind</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 bg-navy-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold font-montserrat mb-4" data-i18n="portfolio.title">Case Studies</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto" data-i18n="portfolio.subtitle">
+                    Real problems solved with measurable results
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="portfolio-card" data-project="1">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="E-commerce platform redesign">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category" data-i18n-category>E-commerce</span>
+                            <h3 class="portfolio-title" data-i18n-title>Premium Retail Platform</h3>
+                            <p class="portfolio-description" data-i18n-description>
+                                Redesigned checkout flow reduced cart abandonment by 34% and increased 
+                                conversion rate by 28% through UX optimization.
+                            </p>
+                            <button class="portfolio-btn" data-i18n="portfolio.viewDetails">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="portfolio-card" data-project="2">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80" alt="SaaS dashboard interface">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">SaaS</span>
+                            <h3 class="portfolio-title">Analytics Dashboard</h3>
+                            <p class="portfolio-description">
+                                Complex data visualization made intuitive. User engagement increased 45% 
+                                and support tickets decreased by 60%.
+                            </p>
+                            <button class="portfolio-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="portfolio-card" data-project="3">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="Corporate website redesign">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Corporate</span>
+                            <h3 class="portfolio-title">Enterprise Website</h3>
+                            <p class="portfolio-description">
+                                Complete brand refresh and website rebuild. Page load speed improved 73%, 
+                                organic traffic increased 52% in 6 months.
+                            </p>
+                            <button class="portfolio-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="portfolio-card" data-project="4">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1558655146-364adaf1fcc9?w=800&q=80" alt="Landing page optimization">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Marketing</span>
+                            <h3 class="portfolio-title">High-Converting Landing Page</h3>
+                            <p class="portfolio-description">
+                                Conversion-focused design and copy optimization. Lead generation increased 
+                                by 89% while reducing cost per acquisition by 41%.
+                            </p>
+                            <button class="portfolio-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="portfolio-card" data-project="5">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80" alt="Brand identity design">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Branding</span>
+                            <h3 class="portfolio-title">Complete Brand Identity</h3>
+                            <p class="portfolio-description">
+                                Visual identity system and digital presence. Brand recognition improved 
+                                significantly across all touchpoints and channels.
+                            </p>
+                            <button class="portfolio-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="portfolio-card" data-project="6">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Mobile app interface">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Mobile</span>
+                            <h3 class="portfolio-title">Mobile-First Platform</h3>
+                            <p class="portfolio-description">
+                                Responsive design and mobile optimization. Mobile conversion rate 
+                                increased by 67% and user satisfaction scores improved dramatically.
+                            </p>
+                            <button class="portfolio-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Modal -->
+    <div id="portfolio-modal" class="portfolio-modal hidden">
+        <div class="portfolio-modal-overlay"></div>
+        <div class="portfolio-modal-content">
+            <button class="portfolio-modal-close" aria-label="Close modal">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 bg-navy-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold font-montserrat mb-4" data-i18n="pricing.title">Pricing</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto" data-i18n="pricing.subtitle">
+                    Transparent pricing for projects of all scales
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Starter Package -->
+                <div class="pricing-card" data-pricing-tier="starter">
+                    <h3 class="text-2xl font-bold font-montserrat mb-2" data-i18n="pricing.starter.title">Starter Website</h3>
+                    <div class="pricing-amount">
+                        <span class="text-sm text-gray-400 mb-1" data-i18n="pricing.starter.startingFrom">Starting from</span>
+                        <span class="price-value" data-i18n-price="pricing.starter.price">$3,500</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-i18n-feature="1" data-i18n="pricing.starter.features.1">Up to 5 pages</li>
+                        <li data-i18n-feature="2" data-i18n="pricing.starter.features.2">Responsive design</li>
+                        <li data-i18n-feature="3" data-i18n="pricing.starter.features.3">Basic SEO setup</li>
+                        <li data-i18n-feature="4" data-i18n="pricing.starter.features.4">Contact form integration</li>
+                        <li data-i18n-feature="5" data-i18n="pricing.starter.features.5">1 month support</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary w-full text-center" data-i18n="pricing.starter.cta">Get Started</a>
+                </div>
+                
+                <!-- Business Package (Recommended) -->
+                <div class="pricing-card pricing-card-featured" data-pricing-tier="business">
+                    <div class="pricing-badge" data-i18n="pricing.business.badge">Most clients choose</div>
+                    <h3 class="text-2xl font-bold font-montserrat mb-2" data-i18n="pricing.business.title">Business Website</h3>
+                    <div class="pricing-amount">
+                        <span class="text-sm text-gray-400 mb-1" data-i18n="pricing.business.startingFrom">Starting from</span>
+                        <span class="price-value" data-i18n-price="pricing.business.price">$8,500</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-i18n-feature="1" data-i18n="pricing.business.features.1">Up to 15 pages</li>
+                        <li data-i18n-feature="2" data-i18n="pricing.business.features.2">Custom design & development</li>
+                        <li data-i18n-feature="3" data-i18n="pricing.business.features.3">Advanced SEO optimization</li>
+                        <li data-i18n-feature="4" data-i18n="pricing.business.features.4">Content management system</li>
+                        <li data-i18n-feature="5" data-i18n="pricing.business.features.5">Performance optimization</li>
+                        <li data-i18n-feature="6" data-i18n="pricing.business.features.6">3 months support</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary w-full text-center" data-i18n="pricing.business.cta">Get Started</a>
+                </div>
+                
+                <!-- Premium Package -->
+                <div class="pricing-card" data-pricing-tier="premium">
+                    <h3 class="text-2xl font-bold font-montserrat mb-2" data-i18n="pricing.premium.title">Premium Custom Solution</h3>
+                    <div class="pricing-amount">
+                        <span class="text-sm text-gray-400 mb-1" data-i18n="pricing.premium.startingFrom">Custom</span>
+                        <span class="price-value" data-i18n-price="pricing.premium.price">Quote</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-i18n-feature="1" data-i18n="pricing.premium.features.1">Unlimited pages</li>
+                        <li data-i18n-feature="2" data-i18n="pricing.premium.features.2">Fully custom solution</li>
+                        <li data-i18n-feature="3" data-i18n="pricing.premium.features.3">E-commerce integration</li>
+                        <li data-i18n-feature="4" data-i18n="pricing.premium.features.4">Advanced features & APIs</li>
+                        <li data-i18n-feature="5" data-i18n="pricing.premium.features.5">Ongoing partnership</li>
+                        <li data-i18n-feature="6" data-i18n="pricing.premium.features.6">Priority support</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary w-full text-center" data-i18n="pricing.premium.cta">Get Started</a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-400" data-i18n="pricing.note">
+                    All projects include consultation, strategy, and clear communication throughout.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authority & Trust Section -->
+    <section id="why-tarracoata" class="py-24 bg-navy-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold font-montserrat mb-4" data-i18n="authority.title">Why TarraCoata</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div class="trust-card">
+                    <h3 class="text-2xl font-bold font-montserrat mb-4 text-gold" data-i18n="authority.values.title">Studio Values</h3>
+                    <p class="text-gray-300 leading-relaxed" data-i18n="authority.values.description">
+                        Quality over quantity. We work with fewer clients to deliver exceptional results. 
+                        Every project receives the attention and precision it deserves.
+                    </p>
+                </div>
+                
+                <div class="trust-card">
+                    <h3 class="text-2xl font-bold font-montserrat mb-4 text-gold" data-i18n="authority.quality.title">Quality Standards</h3>
+                    <p class="text-gray-300 leading-relaxed" data-i18n="authority.quality.description">
+                        Clean code, performance optimization, and accessibility are non-negotiable. 
+                        We build for the long term, not quick wins.
+                    </p>
+                </div>
+                
+                <div class="trust-card">
+                    <h3 class="text-2xl font-bold font-montserrat mb-4 text-gold" data-i18n="authority.communication.title">Communication Principles</h3>
+                    <p class="text-gray-300 leading-relaxed" data-i18n="authority.communication.description">
+                        Clear, regular updates. No surprises. You'll always know where your project 
+                        stands and what's happening next.
+                    </p>
+                </div>
+                
+                <div class="trust-card">
+                    <h3 class="text-2xl font-bold font-montserrat mb-4 text-gold" data-i18n="authority.longterm.title">Long-Term Mindset</h3>
+                    <p class="text-gray-300 leading-relaxed" data-i18n="authority.longterm.description">
+                        We're not here for one-off projects. We build partnerships. Your success 
+                        is our success, and we're invested in your long-term growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-navy-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold font-montserrat mb-4" data-i18n="faq.title">Frequently Asked Questions</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How long does a website project typically take?</span>
+                        <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.questions.1.answer">
+                            Timeline varies by project scope. A starter website typically takes 4-6 weeks, 
+                            while a business website ranges from 8-12 weeks. Premium custom solutions are 
+                            quoted individually based on requirements. We provide detailed timelines during 
+                            the discovery phase.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq.questions.2.question">Do you offer ongoing support after launch?</span>
+                        <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.questions.2.answer">
+                            Yes. All projects include a support period (varies by package). We also offer 
+                            ongoing maintenance and support plans for long-term partnerships. This includes 
+                            updates, security patches, content changes, and strategic guidance.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq.questions.3.question">Is the website SEO-ready at launch?</span>
+                        <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.questions.3.answer">
+                            Absolutely. Every website includes technical SEO setup: proper heading structure, 
+                            meta tags, alt text, sitemap, and performance optimization. We ensure your site 
+                            is search-engine friendly from day one. Ongoing SEO strategy can be discussed 
+                            as part of our support services.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq.questions.4.question">Can I manage content myself after launch?</span>
+                        <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.questions.4.answer">
+                            Yes. Business and Premium packages include a content management system (CMS) 
+                            that allows you to update content easily. We provide training and documentation 
+                            so you can manage your site independently. We're always available for support 
+                            when needed.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq.questions.5.question">What makes TarraCoata Studio different?</span>
+                        <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.questions.5.answer">
+                            We focus on fewer clients with higher quality outcomes. Our approach combines 
+                            strategic thinking, clean code, and measurable results. We're not freelancers— 
+                            we're strategic partners invested in your long-term success. Every decision is 
+                            data-driven and aligned with your business objectives.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq.questions.6.question">Who is this studio NOT for?</span>
+                        <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.questions.6.answer">
+                            We're not the right fit if you're looking for the cheapest option, need 
+                            something done in 48 hours, or want a template with minimal customization. 
+                            We work with clients who value quality, understand the importance of strategy, 
+                            and are committed to building something exceptional.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 7 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq.questions.7.question">Can you scale with my business?</span>
+                        <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.questions.7.answer">
+                            Absolutely. We build with scalability in mind. Whether you're starting small 
+                            or need enterprise-level solutions, our architecture and approach support growth. 
+                            We design systems that can evolve with your business needs over time.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 8 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq.questions.8.question">How involved do I need to be during the process?</span>
+                        <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.questions.8.answer">
+                            We need your input during key phases: discovery (to understand your goals), 
+                            design reviews (to ensure alignment), and content provision. Beyond that, 
+                            we handle the heavy lifting. Regular check-ins keep you informed without 
+                            requiring constant involvement. We respect your time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-navy-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold font-montserrat mb-4" data-i18n="contact.title">Let's Build Something Exceptional</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto" data-i18n="contact.subtitle">
+                    Ready to start your project? We respond within 24 hours.
+                </p>
+            </div>
+            
+            <div class="max-w-2xl mx-auto">
+                <form id="contact-form" action="https://formspree.io/f/mvzpgrde" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label" data-i18n="contact.form.name">Name *</label>
+                        <input type="text" id="name" name="name" required class="form-input" data-i18n-placeholder="contact.form.name" placeholder="Your name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label" data-i18n="contact.form.email">Email *</label>
+                        <input type="email" id="email" name="email" required class="form-input" placeholder="your.email@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project-type" class="form-label" data-i18n="contact.form.projectType">Project Type</label>
+                        <select id="project-type" name="project-type" class="form-input">
+                            <option value="" data-i18n="contact.form.projectTypePlaceholder">Select a project type</option>
+                            <option value="website-design" data-i18n="contact.projectTypes.website">Website Design & Development</option>
+                            <option value="ux-ui" data-i18n="contact.projectTypes.uxui">UX/UI Design</option>
+                            <option value="branding" data-i18n="contact.projectTypes.branding">Brand Identity</option>
+                            <option value="landing-page" data-i18n="contact.projectTypes.landing">Landing Page</option>
+                            <option value="ecommerce" data-i18n="contact.projectTypes.ecommerce">E-commerce Solution</option>
+                            <option value="seo-optimization" data-i18n="contact.projectTypes.seo">SEO & Optimization</option>
+                            <option value="other" data-i18n="contact.projectTypes.other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label" data-i18n="contact.form.message">Message *</label>
+                        <textarea id="message" name="message" required rows="6" class="form-input" data-i18n-placeholder="contact.form.messagePlaceholder" placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary w-full" data-i18n="contact.form.submit">Send Message</button>
+                    
+                    <div id="form-message" class="form-message hidden"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 border-t border-gold/10 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Brand -->
+                <div>
+                    <h3 class="text-2xl font-bold font-montserrat text-gold mb-4" data-i18n="meta.brandName">TarraCoata Studio</h3>
+                    <p class="text-gray-400 mb-4" data-i18n="footer.tagline">
+                        Strategic digital partners focused on quality, precision, and long-term value.
+                    </p>
+                    <div class="space-y-2 text-sm text-gray-400">
+                        <p><a href="mailto:tarracoata@gmail.com" class="hover:text-gold transition-colors">tarracoata@gmail.com</a></p>
+                        <p><a href="tel:+972546969367" class="hover:text-gold transition-colors">+972 54-696-9367</a></p>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold font-montserrat mb-4" data-i18n="footer.quickLinks">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="footer-link" data-i18n="nav.home">Home</a></li>
+                        <li><a href="#about" class="footer-link" data-i18n="nav.about">About</a></li>
+                        <li><a href="#services" class="footer-link" data-i18n="nav.services">Services</a></li>
+                        <li><a href="#process" class="footer-link" data-i18n="nav.process">Process</a></li>
+                        <li><a href="#portfolio" class="footer-link" data-i18n="nav.portfolio">Portfolio</a></li>
+                        <li><a href="#pricing" class="footer-link" data-i18n="nav.pricing">Pricing</a></li>
+                        <li><a href="#contact" class="footer-link" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Social -->
+                <div>
+                    <h4 class="text-lg font-bold font-montserrat mb-4" data-i18n="footer.connect">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/lielwainberg/" target="_blank" rel="noopener noreferrer" class="social-icon" data-i18n-aria-label="footer.instagram" aria-label="Instagram">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/lielwainberg2003" target="_blank" rel="noopener noreferrer" class="social-icon" data-i18n-aria-label="footer.facebook" aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gold/10 pt-8 text-center text-gray-400 text-sm">
+                <p data-i18n="footer.copyright">&copy; 2025 TarraCoata Studio. All rights reserved.</p>
+                <p class="mt-2 text-xs opacity-75">#WebDesign #WebDevelopment #UXUI #DigitalStudio #Branding</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/i18n.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,297 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "process": "Proceso",
+    "portfolio": "Portafolio",
+    "pricing": "Precios",
+    "faq": "Preguntas",
+    "contact": "Contacto",
+    "toggleMenu": "Alternar menú"
+  },
+  "hero": {
+    "title": "Socios Digitales Estratégicos",
+    "titleAccent": "Construidos para Resultados",
+    "subtitle": "Diseñamos y desarrollamos experiencias digitales premium que generan resultados medibles. Menos clientes, mayor calidad. Precisión sobre volumen.",
+    "ctaPrimary": "Iniciar Proyecto",
+    "ctaSecondary": "Ver Trabajos"
+  },
+  "services": {
+    "title": "Servicios Principales",
+    "subtitle": "Soluciones estratégicas diseñadas para claridad, rendimiento y autoridad",
+    "strategy": {
+      "title": "Estrategia y UX",
+      "description": "Diseño de experiencia de usuario basado en investigación que se alinea con los objetivos empresariales. Mapeamos los recorridos del usuario, identificamos puntos de fricción y creamos flujos intuitivos que convierten visitantes en clientes.",
+      "learnMore": "Saber Más"
+    },
+    "webDev": {
+      "title": "Diseño y Desarrollo Web",
+      "description": "Sitios web personalizados construidos para rendimiento, escalabilidad y conversión. Código limpio, tiempos de carga rápidos y diseño responsivo que funciona perfectamente en todos los dispositivos y navegadores.",
+      "learnMore": "Saber Más"
+    },
+    "branding": {
+      "title": "Identidad de Marca",
+      "description": "Lenguaje visual, logotipos y presencia digital que comunican tus valores y diferencian tu marca. Sistemas de identidad cohesivos que escalan en todos los puntos de contacto.",
+      "learnMore": "Saber Más"
+    },
+    "optimization": {
+      "title": "Conversión y Optimización",
+      "description": "SEO técnico, optimización de velocidad y mejoras en la tasa de conversión. Mejoras basadas en datos que aumentan la visibilidad, el rendimiento y los resultados empresariales medibles.",
+      "learnMore": "Saber Más"
+    },
+    "support": {
+      "title": "Soporte Continuo",
+      "description": "Asociaciones a largo plazo con mantenimiento, actualizaciones y orientación estratégica. Aseguramos que tu presencia digital evolucione con tu negocio y continúe funcionando al más alto nivel.",
+      "learnMore": "Saber Más"
+    }
+  },
+  "about": {
+    "title": "Acerca de TarraCoata Studio",
+    "paragraph1": "TarraCoata Studio opera como un socio digital estratégico, no solo un equipo de desarrollo. Nos enfocamos en menos clientes con resultados de mayor calidad, priorizando la precisión, resultados medibles y valor a largo plazo sobre el volumen. Nuestro enfoque se basa en sistemas de diseño, arquitectura de código limpio y toma de decisiones basada en datos.",
+    "paragraph2": "Trabajamos con empresas que entienden la diferencia entre un sitio web y un activo digital estratégico. Nuestros clientes valoran la claridad, el rendimiento y la autoridad, y eso es exactamente lo que entregamos. Cada proyecto es una oportunidad para construir algo excepcional, algo que escale y algo que convierta.",
+    "imageAlt": "Colaboración del equipo de TarraCoata Studio"
+  },
+  "process": {
+    "title": "Cómo Trabajamos",
+    "subtitle": "Un flujo de trabajo probado que reduce el riesgo y garantiza claridad en cada paso",
+    "step1": {
+      "title": "Descubrimiento y Estrategia",
+      "description": "Comenzamos comprendiendo tu negocio, objetivos y audiencia. Esta base asegura que cada decisión se alinee con tus objetivos.",
+      "benefit": "Beneficio del Cliente: Hoja de ruta clara y visión compartida"
+    },
+    "step2": {
+      "title": "Planificación UX/UI",
+      "description": "Los flujos de usuario, wireframes y sistemas de diseño se desarrollan basándose en investigación y mejores prácticas. Estructura antes que estética.",
+      "benefit": "Beneficio del Cliente: Menos revisiones y desarrollo más rápido"
+    },
+    "step3": {
+      "title": "Diseño y Desarrollo",
+      "description": "El diseño visual se encuentra con código limpio y de alto rendimiento. Las revisiones regulares aseguran la alineación y permiten mejoras iterativas.",
+      "benefit": "Beneficio del Cliente: Progreso transparente y retroalimentación temprana"
+    },
+    "step4": {
+      "title": "Pruebas y Optimización",
+      "description": "Las pruebas entre navegadores, auditorías de rendimiento y optimización SEO aseguran que tu sitio funcione perfectamente al lanzamiento.",
+      "benefit": "Beneficio del Cliente: Producto optimizado y listo para lanzar"
+    },
+    "step5": {
+      "title": "Lanzamiento y Soporte",
+      "description": "Implementación fluida, documentación y soporte continuo. Aseguramos que estés equipado para tener éxito a largo plazo.",
+      "benefit": "Beneficio del Cliente: Asociación a largo plazo y tranquilidad"
+    }
+  },
+  "portfolio": {
+    "title": "Casos de Estudio",
+    "subtitle": "Problemas reales resueltos con resultados medibles",
+    "viewDetails": "Ver Detalles",
+    "projects": {
+      "1": {
+        "category": "Comercio Electrónico",
+        "title": "Plataforma Retail Premium",
+        "description": "El rediseño del flujo de pago redujo el abandono del carrito en un 34% y aumentó la tasa de conversión en un 28% mediante optimización UX.",
+        "challenge": "Alta tasa de abandono del carrito y baja conversión en dispositivos móviles.",
+        "solution": "Rediseño del flujo de pago con divulgación progresiva, formularios simplificados y optimización mobile-first. Implementamos indicadores de confianza y agilizamos el proceso de pago.",
+        "outcome": "El abandono del carrito se redujo en un 34%, la tasa de conversión aumentó en un 28%, los ingresos móviles aumentaron en un 45%."
+      },
+      "2": {
+        "category": "SaaS",
+        "title": "Panel de Análisis",
+        "description": "Visualización de datos compleja hecha intuitiva. El compromiso del usuario aumentó un 45% y los tickets de soporte disminuyeron en un 60%.",
+        "challenge": "Visualización de datos compleja que abruma a los usuarios, llevando a un bajo compromiso.",
+        "solution": "Rediseño del panel con jerarquía de datos intuitiva, widgets personalizables y visualizaciones interactivas. Agregamos flujo de incorporación y ayuda contextual.",
+        "outcome": "El compromiso del usuario aumentó en un 45%, los tickets de soporte disminuyeron en un 60%, los usuarios activos diarios aumentaron en un 38%."
+      },
+      "3": {
+        "category": "Corporativo",
+        "title": "Sitio Web Empresarial",
+        "description": "Renovación completa de marca y reconstrucción del sitio web. La velocidad de carga de páginas mejoró en un 73%, el tráfico orgánico aumentó en un 52% en 6 meses.",
+        "challenge": "Presencia de marca desactualizada, tiempos de carga lentos, rendimiento SEO deficiente.",
+        "solution": "Renovación completa de marca con sistema de diseño moderno, optimización de rendimiento y estrategia SEO integral. Reconstruido con arquitectura limpia.",
+        "outcome": "La velocidad de carga de páginas mejoró en un 73%, el tráfico orgánico aumentó en un 52% en 6 meses, el reconocimiento de marca aumentó significativamente."
+      },
+      "4": {
+        "category": "Marketing",
+        "title": "Página de Aterrizaje de Alta Conversión",
+        "description": "Diseño centrado en conversión y optimización de texto. La generación de leads aumentó en un 89% mientras se redujo el costo por adquisición en un 41%.",
+        "challenge": "Baja tasa de conversión en páginas de aterrizaje de campañas, alto costo por adquisición.",
+        "solution": "Diseño centrado en conversión con propuesta de valor clara, prueba social y flujo de formulario optimizado. Probamos múltiples variaciones A/B.",
+        "outcome": "La generación de leads aumentó en un 89%, el costo por adquisición se redujo en un 41%, el ROI mejoró 3 veces."
+      },
+      "5": {
+        "category": "Branding",
+        "title": "Identidad de Marca Completa",
+        "description": "Sistema de identidad visual y presencia digital. El reconocimiento de marca mejoró significativamente en todos los puntos de contacto y canales.",
+        "challenge": "Presencia de marca inconsistente en los puntos de contacto, posicionamiento de marca poco claro.",
+        "solution": "Desarrollamos un sistema integral de identidad de marca que incluye logotipo, paleta de colores, tipografía y guías de marca. Aplicado en todos los puntos de contacto digitales.",
+        "outcome": "El reconocimiento de marca mejoró significativamente, mensajes consistentes en todos los canales, posicionamiento de mercado más fuerte."
+      },
+      "6": {
+        "category": "Móvil",
+        "title": "Plataforma Mobile-First",
+        "description": "Diseño responsivo y optimización móvil. La tasa de conversión móvil aumentó en un 67% y las puntuaciones de satisfacción del usuario mejoraron dramáticamente.",
+        "challenge": "Experiencia móvil deficiente que lleva a bajas tasas de conversión móvil.",
+        "solution": "Optimización móvil completa con diseño responsivo, interacciones táctiles y características específicas para móviles. Optimización de rendimiento para redes móviles.",
+        "outcome": "La tasa de conversión móvil aumentó en un 67%, las puntuaciones de satisfacción del usuario mejoraron dramáticamente, el compromiso del tráfico móvil aumentó en un 52%."
+      }
+    },
+    "modal": {
+      "challenge": "Desafío",
+      "solution": "Solución",
+      "outcome": "Resultado",
+      "close": "Cerrar ventana"
+    }
+  },
+  "pricing": {
+    "title": "Precios",
+    "subtitle": "Precios transparentes basados en valor, diseñados para resultados reales.",
+    "starter": {
+      "title": "Sitio inicial",
+      "startingFrom": "desde",
+      "price": "€3.200",
+      "currency": "EUR",
+      "currencySymbol": "€",
+      "features": {
+        "1": "Hasta 5 páginas",
+        "2": "Diseño responsivo",
+        "3": "Configuración SEO básica",
+        "4": "Integración de formulario de contacto",
+        "5": "1 mes de soporte"
+      },
+      "cta": "Iniciar proyecto"
+    },
+    "business": {
+      "title": "Sitio empresarial",
+      "badge": "La opción preferida por empresas en crecimiento",
+      "startingFrom": "desde",
+      "price": "€7.900",
+      "currency": "EUR",
+      "currencySymbol": "€",
+      "features": {
+        "1": "Hasta 15 páginas",
+        "2": "Diseño y desarrollo personalizado",
+        "3": "Optimización SEO avanzada",
+        "4": "Sistema de gestión de contenido",
+        "5": "Optimización de rendimiento",
+        "6": "3 meses de soporte"
+      },
+      "cta": "Iniciar proyecto"
+    },
+    "premium": {
+      "title": "Solución premium a medida",
+      "startingFrom": "Personalizado",
+      "price": "Presupuesto personalizado",
+      "currency": "EUR",
+      "currencySymbol": "€",
+      "features": {
+        "1": "Páginas ilimitadas",
+        "2": "Solución completamente personalizada",
+        "3": "Integración de comercio electrónico",
+        "4": "Características avanzadas y APIs",
+        "5": "Asociación continua",
+        "6": "Soporte prioritario"
+      },
+      "cta": "Iniciar proyecto"
+    },
+    "note": "Todos los planes incluyen asesoría estratégica y comunicación clara."
+  },
+  "authority": {
+    "title": "Por Qué TarraCoata",
+    "values": {
+      "title": "Valores del Estudio",
+      "description": "Calidad sobre cantidad. Trabajamos con menos clientes para entregar resultados excepcionales. Cada proyecto recibe la atención y precisión que merece."
+    },
+    "quality": {
+      "title": "Estándares de Calidad",
+      "description": "Código limpio, optimización de rendimiento y accesibilidad no son negociables. Construimos para el largo plazo, no para victorias rápidas."
+    },
+    "communication": {
+      "title": "Principios de Comunicación",
+      "description": "Actualizaciones claras y regulares. Sin sorpresas. Siempre sabrás dónde está tu proyecto y qué viene a continuación."
+    },
+    "longterm": {
+      "title": "Mentalidad a Largo Plazo",
+      "description": "No estamos aquí para proyectos únicos. Construimos asociaciones. Tu éxito es nuestro éxito, y estamos invertidos en tu crecimiento a largo plazo."
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "questions": {
+      "1": {
+        "question": "¿Cuánto tiempo típicamente toma un proyecto de sitio web?",
+        "answer": "El tiempo varía según el alcance del proyecto. Un sitio web básico típicamente toma 4-6 semanas, mientras que un sitio web empresarial oscila entre 8-12 semanas. Las soluciones personalizadas premium se cotizan individualmente según los requisitos. Proporcionamos cronogramas detallados durante la fase de descubrimiento."
+      },
+      "2": {
+        "question": "¿Ofrecen soporte continuo después del lanzamiento?",
+        "answer": "Sí. Todos los proyectos incluyen un período de soporte (varía según el paquete). También ofrecemos planes de mantenimiento y soporte continuo para asociaciones a largo plazo. Esto incluye actualizaciones, parches de seguridad, cambios de contenido y orientación estratégica."
+      },
+      "3": {
+        "question": "¿El sitio web está listo para SEO al lanzamiento?",
+        "answer": "Absolutamente. Cada sitio web incluye configuración SEO técnica: estructura de encabezados adecuada, meta etiquetas, texto alternativo, mapa del sitio y optimización de rendimiento. Aseguramos que tu sitio sea amigable con los motores de búsqueda desde el primer día. La estrategia SEO continua puede discutirse como parte de nuestros servicios de soporte."
+      },
+      "4": {
+        "question": "¿Puedo gestionar el contenido yo mismo después del lanzamiento?",
+        "answer": "Sí. Los paquetes Empresarial y Premium incluyen un sistema de gestión de contenido (CMS) que te permite actualizar el contenido fácilmente. Proporcionamos capacitación y documentación para que puedas gestionar tu sitio de forma independiente. Siempre estamos disponibles para soporte cuando lo necesites."
+      },
+      "5": {
+        "question": "¿Qué hace diferente a TarraCoata Studio?",
+        "answer": "Nos enfocamos en menos clientes con resultados de mayor calidad. Nuestro enfoque combina pensamiento estratégico, código limpio y resultados medibles. No somos freelancers, somos socios estratégicos invertidos en tu éxito a largo plazo. Cada decisión está basada en datos y alineada con tus objetivos empresariales."
+      },
+      "6": {
+        "question": "¿Para quién NO es este estudio?",
+        "answer": "No somos la opción adecuada si buscas la opción más barata, necesitas algo hecho en 48 horas, o quieres una plantilla con personalización mínima. Trabajamos con clientes que valoran la calidad, entienden la importancia de la estrategia y están comprometidos a construir algo excepcional."
+      },
+      "7": {
+        "question": "¿Pueden escalar con mi negocio?",
+        "answer": "Absolutamente. Construimos pensando en la escalabilidad. Ya sea que estés comenzando pequeño o necesites soluciones a nivel empresarial, nuestra arquitectura y enfoque apoyan el crecimiento. Diseñamos sistemas que pueden evolucionar con las necesidades de tu negocio con el tiempo."
+      },
+      "8": {
+        "question": "¿Qué tan involucrado necesito estar durante el proceso?",
+        "answer": "Necesitamos tu aporte durante las fases clave: descubrimiento (para entender tus objetivos), revisiones de diseño (para asegurar la alineación) y provisión de contenido. Más allá de eso, manejamos el trabajo pesado. Las revisiones regulares te mantienen informado sin requerir participación constante. Respetamos tu tiempo."
+      }
+    }
+  },
+  "contact": {
+    "title": "Construyamos Algo Excepcional",
+    "subtitle": "¿Listo para comenzar tu proyecto? Respondemos en 24 horas.",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "projectType": "Tipo de Proyecto",
+      "projectTypePlaceholder": "Selecciona un tipo de proyecto",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos sobre tu proyecto...",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Gracias! Tu mensaje ha sido enviado. Responderemos en 24 horas.",
+      "error": "Algo salió mal. Por favor intenta de nuevo más tarde.",
+      "required": "Por favor completa todos los campos requeridos.",
+      "invalidEmail": "Por favor ingresa una dirección de correo electrónico válida.",
+      "networkError": "Error de red. Por favor verifica tu conexión e intenta de nuevo."
+    },
+    "projectTypes": {
+      "website": "Diseño y Desarrollo Web",
+      "uxui": "Diseño UX/UI",
+      "branding": "Identidad de Marca",
+      "landing": "Página de Aterrizaje",
+      "ecommerce": "Solución de Comercio Electrónico",
+      "seo": "SEO y Optimización",
+      "other": "Otro"
+    }
+  },
+  "footer": {
+    "tagline": "Socios digitales estratégicos enfocados en calidad, precisión y valor a largo plazo.",
+    "quickLinks": "Enlaces Rápidos",
+    "connect": "Conectar",
+    "copyright": "© 2025 TarraCoata Studio. Todos los derechos reservados.",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "meta": {
+    "title": "TarraCoata Studio - Soluciones Digitales Premium",
+    "description": "TarraCoata Studio - Estudio digital premium especializado en Diseño Web, Desarrollo Web, Diseño UX/UI, Branding y Soluciones Digitales. Socios estratégicos para experiencias digitales excepcionales.",
+    "keywords": "diseño web, desarrollo web, diseño UX/UI, branding, soluciones digitales, agencia web premium",
+    "brandName": "TarraCoata Studio"
+  }
+}
+
