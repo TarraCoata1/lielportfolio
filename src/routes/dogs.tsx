@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { WorldShell } from "@/components/worlds/WorldShell";
+import { WorldCopy, type WorldBlock } from "@/components/worlds/WorldCopy";
 import canineAsset from "@/assets/liel-canine.jpg.asset.json";
 
 const TITLE = "מאלף כלבים בירושלים | התנהגות, ציות, אגרסיביות — ליאל ווינברג";

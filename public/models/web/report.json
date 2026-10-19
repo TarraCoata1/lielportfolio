@@ -1,0 +1,87 @@
+[
+  {
+    "file": "ai_core.glb",
+    "sourceBytes": 41937736,
+    "webBytes": 2040832
+  },
+  {
+    "file": "ball.glb",
+    "sourceBytes": 63848932,
+    "webBytes": 4474444
+  },
+  {
+    "file": "balldigital.glb",
+    "sourceBytes": 76476872,
+    "webBytes": 5815948
+  },
+  {
+    "file": "bone.glb",
+    "sourceBytes": 22511144,
+    "webBytes": 331328
+  },
+  {
+    "file": "clicker.glb",
+    "sourceBytes": 24220200,
+    "webBytes": 1133328
+  },
+  {
+    "file": "code.glb",
+    "sourceBytes": 31437832,
+    "webBytes": 1499860
+  },
+  {
+    "file": "collar.glb",
+    "sourceBytes": 52509748,
+    "webBytes": 3552160
+  },
+  {
+    "file": "coupe_glass.glb",
+    "sourceBytes": 18515068,
+    "webBytes": 620240
+  },
+  {
+    "file": "cube.glb",
+    "sourceBytes": 67790692,
+    "webBytes": 5285124
+  },
+  {
+    "file": "dog.glb",
+    "sourceBytes": 30745176,
+    "webBytes": 1207720
+  },
+  {
+    "file": "dog_head.glb",
+    "sourceBytes": 30340364,
+    "webBytes": 1136100
+  },
+  {
+    "file": "ice_cube.glb",
+    "sourceBytes": 15430120,
+    "webBytes": 365336
+  },
+  {
+    "file": "jugger.glb",
+    "sourceBytes": 22694132,
+    "webBytes": 619720
+  },
+  {
+    "file": "shaker.glb",
+    "sourceBytes": 26689996,
+    "webBytes": 877936
+  },
+  {
+    "file": "system.glb",
+    "sourceBytes": 50581320,
+    "webBytes": 3465516
+  },
+  {
+    "file": "whiskey_bottle.glb",
+    "sourceBytes": 20880064,
+    "webBytes": 691896
+  },
+  {
+    "file": "whistle.glb",
+    "sourceBytes": 20976052,
+    "webBytes": 576760
+  }
+]

@@ -81,7 +81,6 @@ export function WorldPortal() {
   return (
     <section id="worlds" className="facets" aria-labelledby="facets-title">
       <header className="section-shell facets__head">
-        <p className="eyebrow">04 / {t({ he: "תחומים", en: "Practice" })}</p>
         <h2 id="facets-title">{t({ he: "אדם אחד. שלוש דרכי עבודה.", en: "One person. Three ways of working." })}</h2>
         <p className="section-lede">
           {t({
@@ -100,13 +99,12 @@ export function WorldPortal() {
       </nav>
 
       {WORLDS.map((w, i) => (
-        <article key={w.id} id={FACET_ANCHORS[w.id]} className={`facet facet--${w.id}`} data-facet={w.id} aria-labelledby={`facet-${w.id}`}>
+        <article key={w.id} id={FACET_ANCHORS[w.id]} className={`facet facet--${w.id}`} data-facet={w.id} data-scene-track aria-labelledby={`facet-${w.id}`}>
           <div className="section-shell facet__grid" data-flip={i % 2 === 1 || undefined}>
-            <figure className="facet__media">
+            <div className="facet__visual"><figure className="facet__media">
               <img src={w.image} alt={t({ he: `ליאל ווינברג — ${w.discipline.he}`, en: `Liel Wainberg — ${w.discipline.en}` })} loading="lazy" decoding="async" />
-              <div className="facet__scene"><LazyScene kind={w.id as "digital" | "canine" | "liquid"} fallback={null} /></div>
               <figcaption aria-hidden="true">{w.index} / {w.name}</figcaption>
-            </figure>
+            </figure><div className="facet__object"><LazyScene kind={w.id} fallback={<img src={w.image} alt="" />} /></div></div>
             <div className="facet__copy">
               <img className={`brand-mark brand-mark--${MARK[w.id]}`} src={`/icons/${MARK[w.id]}-180.png`} alt={`${w.name} logo`} width="52" height="52" loading="lazy" />
               <span className="facet__index" aria-hidden="true">{w.index}</span>

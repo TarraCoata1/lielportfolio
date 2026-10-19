@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { useMotionPreference } from "@/hooks/use-motion-preference";
 
 /**
  * LIELWAINBERG.COM — Atmospheric Ambient Particle Engine
@@ -34,6 +35,7 @@ const PALETTES: Record<Mode, { r: number; g: number; b: number; connectDist: num
 };
 
 export function ParticleNetwork() {
+  const paused = useMotionPreference();
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -41,6 +43,7 @@ export function ParticleNetwork() {
     if (!canvas) return;
     const ctx = canvas.getContext("2d", { alpha: true });
     if (!ctx) return;
+    if (paused) { ctx.clearRect(0, 0, canvas.width, canvas.height); return; }
 
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const isFinePointer = window.matchMedia("(pointer: fine)").matches;
@@ -71,8 +74,8 @@ export function ParticleNetwork() {
 
       // Scale density: mobile ~30, desktop ~85
       const count = isFinePointer
-        ? Math.min(100, Math.max(45, Math.round((width * height) / 18000)))
-        : Math.min(35, Math.max(20, Math.round((width * height) / 32000)));
+        ? Math.min(60, Math.max(24, Math.round((width * height) / 18000)))
+        : Math.min(24, Math.max(12, Math.round((width * height) / 32000)));
 
       particles = Array.from({ length: count }, () => {
         const seed = Math.random() * Math.PI * 2;
@@ -274,7 +277,7 @@ export function ParticleNetwork() {
       document.removeEventListener("visibilitychange", onVisibilityChange);
       prefersReducedMotion.removeEventListener("change", start);
     };
-  }, []);
+  }, [paused]);
 
   return (
     <canvas

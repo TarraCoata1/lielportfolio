@@ -16,6 +16,10 @@ dist-ssr
 .nitro
 *.local
 
+# Local source masters and design-review captures are not deployment assets.
+source-assets/
+.impeccable/review/
+
 # Wrangler / Cloudflare
 .wrangler/
 .dev.vars

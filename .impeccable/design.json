@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T04:43:59.002877+00:00",
+  "title": "Design System: Liel Wainberg",
+  "extensions": {
+    "shadows": [
+      {
+        "name": "shadow-panel",
+        "value": "0 12px 32px color-mix(in oklab, var(--black) 72%, transparent)",
+        "purpose": "Raised panels"
+      },
+      {
+        "name": "shadow-focus",
+        "value": "0 0 0 3px var(--focus-glow)",
+        "purpose": "Keyboard focus"
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "State and reveal easing"
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.77, 0, 0.175, 1)",
+        "purpose": "Shared transition easing"
+      },
+      {
+        "name": "ease-drawer",
+        "value": "cubic-bezier(0.32, 0.72, 0, 1)",
+        "purpose": "Drawer easing"
+      },
+      {
+        "name": "duration-press",
+        "value": "140ms",
+        "purpose": "Press feedback"
+      },
+      {
+        "name": "duration-hover",
+        "value": "180ms",
+        "purpose": "Hover feedback"
+      },
+      {
+        "name": "duration-menu",
+        "value": "200ms",
+        "purpose": "Menu transitions"
+      },
+      {
+        "name": "duration-panel",
+        "value": "250ms",
+        "purpose": "Panel transitions"
+      },
+      {
+        "name": "duration-reveal",
+        "value": "500ms",
+        "purpose": "Scroll reveals"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone-max",
+        "value": "767px"
+      },
+      {
+        "name": "chapter-columns",
+        "value": "960px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "action-primary",
+      "description": "Primary action as implemented in the portfolio.",
+      "html": "<a class=\"ds-action-primary\" href=\"#\">Explore the work</a>",
+      "css": ".ds-action-primary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.8rem 1.15rem;border:1px solid var(--border-hover);border-radius:3px;color:var(--white);font:700 .9rem var(--font-sans);text-decoration:none;transition:transform var(--duration-press) var(--ease-out),background-color var(--duration-hover) ease;background:var(--burgundy);border-color:var(--burgundy);}.ds-action-primary:hover{background:var(--burgundy-hover);}.ds-action-primary:focus-visible { outline:2px solid var(--ring); outline-offset:3px; box-shadow:var(--shadow-focus); }.ds-action-primary:active{transform:scale(.97)}"
+    },
+    {
+      "name": "Quiet action",
+      "kind": "button",
+      "refersTo": "action-quiet",
+      "description": "Quiet action as implemented in the portfolio.",
+      "html": "<a class=\"ds-action-quiet\" href=\"#\">Explore the work</a>",
+      "css": ".ds-action-quiet{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.8rem 1.15rem;border:1px solid var(--border-hover);border-radius:3px;color:var(--white);font:700 .9rem var(--font-sans);text-decoration:none;transition:transform var(--duration-press) var(--ease-out),background-color var(--duration-hover) ease;background:transparent;}.ds-action-quiet:hover{background:var(--surface-2);}.ds-action-quiet:focus-visible { outline:2px solid var(--ring); outline-offset:3px; box-shadow:var(--shadow-focus); }.ds-action-quiet:active{transform:scale(.97)}"
+    },
+    {
+      "name": "Project search",
+      "kind": "input",
+      "refersTo": "search",
+      "description": "Project search as implemented in the portfolio.",
+      "html": "<label class=\"ds-search\"><input aria-label=\"Search projects\" placeholder=\"Search projects\"></label>",
+      "css": ".ds-search{display:flex;padding-inline:.8rem;border:1px solid var(--control-border);border-radius:var(--radius-control);background:var(--black)}.ds-search input{min-height:48px;width:100%;border:0;background:transparent;color:var(--white);font:1rem var(--font-sans);outline:0}.ds-search:focus-within{outline:2px solid var(--ring);outline-offset:3px}.ds-search input::placeholder{color:var(--silver-dim)}"
+    },
+    {
+      "name": "Selected project filter",
+      "kind": "chip",
+      "refersTo": "filter-selected",
+      "description": "Selected project filter as implemented in the portfolio.",
+      "html": "<button class=\"ds-filter\" aria-pressed=\"true\">All projects</button>",
+      "css": ".ds-filter{min-height:48px;padding:0 12px;border:0;border-radius:2px;background:var(--burgundy);color:var(--white);font:inherit;cursor:pointer}.ds-filter:hover{background:var(--burgundy-hover)}.ds-filter:focus-visible { outline:2px solid var(--ring); outline-offset:3px; box-shadow:var(--shadow-focus); }"
+    },
+    {
+      "name": "Navigation link",
+      "kind": "nav",
+      "description": "Navigation link as implemented in the portfolio.",
+      "html": "<nav><a class=\"ds-nav\" href=\"#\" aria-current=\"location\">Work</a></nav>",
+      "css": ".ds-nav{position:relative;display:inline-flex;align-items:center;min-height:44px;color:var(--silver);font:.78rem var(--font-sans);text-decoration:none}.ds-nav:hover,.ds-nav[aria-current]{color:var(--white)}.ds-nav[aria-current]::after{content:\"\";position:absolute;inset-inline:0;bottom:5px;height:1px;background:var(--burgundy-light)}.ds-nav:focus-visible { outline:2px solid var(--ring); outline-offset:3px; box-shadow:var(--shadow-focus); }"
+    },
+    {
+      "name": "Object selector",
+      "kind": "custom",
+      "description": "Object selector as implemented in the portfolio.",
+      "html": "<button class=\"ds-object\" aria-label=\"Select model\" aria-pressed=\"true\"><span></span></button>",
+      "css": ".ds-object{display:grid;place-items:center;width:44px;height:44px;color:var(--white);background:transparent;border:0;cursor:pointer}.ds-object span{width:18px;height:2px;background:currentColor;opacity:.25;transition:opacity var(--duration-hover) var(--ease-out),transform var(--duration-hover) var(--ease-out)}.ds-object[aria-pressed=\"true\"] span{opacity:1;transform:scaleX(1.35)}.ds-object:hover span{opacity:.8}.ds-object:focus-visible{outline:2px solid currentColor;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "One person, three authored chapters",
+    "overview": "A dark, burgundy-led personal portfolio uses a large name, real photography, and authored objects to connect three equally important practices. Each practice has contextual materials and accents while keeping the same primary identity and interaction rhythm.\n\nPhotographs, model studies, and copy occupy separate space. Motion follows natural scrolling inside the object stage; it does not require visitors to wait before reading or navigating. This record describes the implementation, not an award claim or a performance certification.",
+    "keyCharacteristics": [
+      "Warm dark surfaces and burgundy identity.",
+      "Hebrew and English layouts with shared typography roles.",
+      "Separate photo, object, and reading areas.",
+      "Reversible scroll motion with explicit pause and reduced-motion support."
+    ],
+    "rules": [
+      {
+        "name": "The Shared Identity Rule",
+        "body": "Contextual chapter accents never replace Liel's primary identity.",
+        "section": "colors"
+      },
+      {
+        "name": "The Separate Stage Rule",
+        "body": "Keep 3D motion inside its allocated stage, clear of photographs, text, and controls.",
+        "section": "layout"
+      }
+    ],
+    "dos": [
+      "Do reuse contextual color roles and precision motion tokens.",
+      "Do preserve separate reading and object regions at every viewport.",
+      "Do retain Hebrew, English, keyboard, and reduced-motion paths.",
+      "Do keep verified facts in the shared portfolio data source."
+    ],
+    "donts": [
+      "Don't add ornamental 3D rings or unrelated procedural models.",
+      "Don't preload all 17 models or require 3D before content is usable.",
+      "Don't treat desktop screenshots as proof of runtime performance on all devices."
+    ]
+  }
+}

@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { OpeningLoader } from "@/components/ui/OpeningLoader";
 import { SiteNav } from "@/components/ui/SiteNav";
 import { AmbientSystem } from "@/components/ui/AmbientSystem";
 import { Hero } from "@/components/sections/Hero";
@@ -89,16 +88,15 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main id="main-content" className="portfolio-page">
-      <OpeningLoader />
       <SiteNav />
       <AmbientSystem />
       <Hero />
       <About />
+      <WorldPortal />
       <DigitalArchitecture />
       <TechStack />
       <Projects />
       <Testimonials />
-      <WorldPortal />
       <WorldTransition world="human" index="06" title={{ he: "ובסוף, הכול חוזר לליאל.", en: "In the end, it all returns to Liel." }} text={{ he: "לא שלושה מותגים. אדם אחד עם כמה דרכים להבין עולם.", en: "Not three brands. One person with several ways of understanding the world." }} />
       <ReturnToLiel />
       <Contact />

@@ -11,6 +11,7 @@ const FILTERS: Filter[] = ["all", "web", "business", "ecommerce", "brand", "nigh
 
 export function Projects() {
   const { t, dir } = useI18n();
+  const [expanded, setExpanded] = useState(false);
   const [filter, setFilter] = useState<Filter>("all");
   const [query, setQuery] = useState("");
   const [lens, setLens] = useState<"executive" | "architecture">("executive");
@@ -23,6 +24,7 @@ export function Projects() {
     });
   }, [filter, query]);
 
+  const visibleProjects = expanded || filter !== "all" || query.trim() ? projects : projects.slice(0, 4);
   return (
     <section className="work-section" data-lens={lens} id="projects" aria-labelledby="projects-title">
       <div className="section-shell">
@@ -56,7 +58,7 @@ export function Projects() {
         </div>
 
         <div className="project-editorial" hidden={projects.length === 0}>
-          {projects.map((project, index) => (
+          {visibleProjects.map((project, index) => (
             <Reveal key={project.id}>
               <article data-trace={project.family === "nightlife" ? "copper" : undefined} className={`project-story ${index % 2 ? "project-story--reverse" : ""} ${index % 5 === 0 ? "project-story--feature" : ""}`}>
                 <Link to="/projects/$slug" params={{ slug: project.id }} className="project-story__image" aria-label={`${t({ he: "למקרה הבוחן: ", en: "Read case study: " })}${t(project.name)}`}>
@@ -88,7 +90,8 @@ export function Projects() {
             </Reveal>
           ))}
         </div>
-        <p className="work-count" aria-live="polite">{t({ he: `${projects.length} פרויקטים מוצגים`, en: `${projects.length} projects shown` })}</p>
+        {!expanded && filter === "all" && !query.trim() && projects.length > 4 && <Button className="work-more" variant="outline" onClick={() => setExpanded(true)}>{t({ he: `לכל ${projects.length} הפרויקטים`, en: `Explore all ${projects.length} projects` })}</Button>}
+        <p className="work-count" aria-live="polite">{t({ he: `${visibleProjects.length} מתוך ${projects.length} פרויקטים`, en: `${visibleProjects.length} of ${projects.length} projects shown` })}</p>
         {projects.length === 0 && <div className="work-empty"><p>{t({ he: "לא נמצאו פרויקטים מתאימים.", en: "No matching projects." })}</p><Button variant="outline" onClick={() => { setQuery(""); setFilter("all"); }}>{t({ he: "ניקוי החיפוש", en: "Clear search" })}</Button></div>}
       </div>
     </section>

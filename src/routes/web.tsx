@@ -1,5 +1,6 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { WorldShell } from "@/components/worlds/WorldShell";
+import { WorldCopy, type WorldBlock } from "@/components/worlds/WorldCopy";
 import digitalAsset from "@/assets/liel-portrait-v3.png.asset.json";
 
 const TITLE = "בונה אתרים בירושלים | מפתח Full Stack ומעצב UX/UI — ליאל ווינברג";
@@ -96,63 +97,51 @@ export const Route = createFileRoute("/web")({
   component: WebPage,
 });
 
+const WEB_BLOCKS: WorldBlock[] = [
+  { type: "crumb", current: { he: "בניית אתרים", en: "Web" } },
+  { type: "h1", text: { he: "בונה אתרים, מפתח Full Stack ומעצב UX/UI בירושלים", en: "Web developer, full-stack engineer and UX/UI designer in Jerusalem" } },
+  { type: "lead", text: { he: "אני ליאל ווינברג — בונה אתרים ומערכות אינטרנט מהירים, מדויקים ויפים. אני לוקח פרויקט מאפס ועד עלייה לאוויר: מאסטרטגיה ועיצוב חוויית משתמש (UX/UI), דרך פיתוח Full Stack ב-React ו-TypeScript, ועד דאטהבייס, אינטגרציות ו-SEO טכני.", en: "I am Liel Wainberg — I build fast, precise websites and web systems. I take a project from zero to launch: strategy and UX/UI, full-stack development in React and TypeScript, then databases, integrations and technical SEO." } },
+  { type: "h2", text: { he: "מה אני בונה", en: "What I build" } },
+  {
+    type: "points",
+    items: [
+      { title: { he: "אתרי תדמית", en: "Brochure sites" }, body: { he: "לעסקים קטנים, בעלי מקצוע ופרילנסרים — מהיר לעלייה לאוויר, מותאם מובייל, מותאם גוגל.", en: "For small businesses, trades and freelancers — fast to launch, mobile-first, built for search." } },
+      { title: { he: "חנויות אונליין", en: "Online stores" }, body: { he: "סליקה, מלאי, ניהול הזמנות, אינטגרציה ל-WhatsApp ולמערכת השליחויות.", en: "Payments, inventory, order management, WhatsApp and delivery integrations." } },
+      { title: { he: "מערכות Web ו-SaaS", en: "Web systems and SaaS" }, body: { he: "דאשבורדים, אזורים אישיים, אוטומציות, AI, וכל מה שדורש לוגיקה אמיתית בצד-שרת.", en: "Dashboards, private areas, automations, AI, and anything that needs real server logic." } },
+      { title: { he: "דפי נחיתה", en: "Landing pages" }, body: { he: "A/B testing, מהירות טעינה מתחת ל-1.5 שניות, אופטימיזציה להמרה.", en: "A/B testing, load speed under 1.5 seconds, conversion-focused." } },
+    ],
+  },
+  { type: "h2", text: { he: "איך אני עובד אחרת מבונה אתרים ממוצע", en: "How the work is different" } },
+  { type: "p", text: { he: "רוב בוני האתרים בישראל לוקחים תבנית WordPress, מחליפים צבעים, וקוראים לזה אתר. אני בונה כל אתר מהיסוד, בקוד נקי, עם ארכיטקטורה שמחזיקה לשנים. זה אומר שהאתר שלך נטען מהר יותר, מדורג גבוה יותר בגוגל, מאובטח יותר, ולא נשבר עם כל עדכון של פלאגין.", en: "Most site builders in Israel take a WordPress template, change the colours, and call it a site. I build each site from the ground up, in clean code, with architecture that holds for years. That means it loads faster, ranks better, stays more secure, and does not break with every plugin update." } },
+  { type: "p", text: { he: "אני גם מעצב את חוויית המשתמש בעצמי — אז אין פינג-פונג בין מעצב למפתח. אתה מקבל מהמוח האחד גם את ההבנה של הפסיכולוגיה של המבקר באתר, וגם את היכולת לממש אותה בקוד מדויק.", en: "I also design the user experience myself, so there is no ping-pong between designer and developer. You get one mind that understands the visitor and can implement that understanding in precise code." } },
+  { type: "h2", text: { he: "תהליך העבודה", en: "How the work runs" } },
+  {
+    type: "steps",
+    items: [
+      { title: { he: "שיחת ייעוץ חינם", en: "A free consult" }, body: { he: "מבינים מה העסק שלך, מי הקהל, ומה הצלחה נראית.", en: "We understand the business, the audience, and what success looks like." } },
+      { title: { he: "הצעת מחיר וגאנט", en: "Quote and timeline" }, body: { he: "שקוף, ללא הפתעות.", en: "Transparent, without surprises." } },
+      { title: { he: "עיצוב ואישור", en: "Design and approval" }, body: { he: "מוקאפ, דיון, התאמות.", en: "Mockup, discussion, adjustments." } },
+      { title: { he: "פיתוח", en: "Build" }, body: { he: "בנייה מודולרית עם תצוגה מקדימה בכל שלב.", en: "Modular construction with a preview at every stage." } },
+      { title: { he: "עלייה לאוויר + SEO", en: "Launch and SEO" }, body: { he: "חיבור דומיין, Search Console, Analytics, מהירות.", en: "Domain, Search Console, Analytics, speed." } },
+      { title: { he: "תחזוקה", en: "Care" }, body: { he: "חודש ראשון על חשבון הבית.", en: "The first month is included." } },
+    ],
+  },
+  { type: "h2", text: { he: "למה זה משתלם דווקא אצלי", en: "Why this is worth it" } },
+  { type: "p", text: { he: "לא רק שאני בונה אתר — אני מבטיח שהוא יביא לקוחות. אופטימיזציה ל-SEO, מהירות, נגישות (תקן ישראלי 5568), Schema.org, ו-Open Graph נקיים מובנים בכל פרויקט מהיום הראשון. זה לא תוסף; זה חלק מהבסיס.", en: "I do not only build a site — I make sure it can bring clients. SEO, speed, accessibility (Israeli standard 5568), Schema.org and clean Open Graph are built into every project from day one. That is not an add-on; it is the base." } },
+  {
+    type: "cta",
+    title: { he: "מוכן להתחיל?", en: "Ready to start?" },
+    text: { he: "שיחת ייעוץ חינם של 20 דקות, ללא מחויבות.", en: "A free 20-minute consult, with no obligation." },
+    waHref: "https://wa.me/972546969367?text=%D7%90%D7%94%D7%9C%D7%9F%20%D7%9C%D7%99%D7%90%D7%9C%2C%20%D7%90%D7%A0%D7%99%20%D7%A4%D7%95%D7%A0%D7%94%20%D7%91%D7%A7%D7%A9%D7%A8%20%D7%9C%D7%A4%D7%99%D7%AA%D7%95%D7%97%20%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA%20%D7%9E%D7%95%D7%AA%D7%90%D7%9E%D7%AA%20%D7%90%D7%99%D7%A9%D7%99%D7%AA.",
+    mailHref: "mailto:lielwa2004@gmail.com?subject=בניית אתר",
+  },
+];
+
 function WebPage() {
   return (
     <WorldShell world="digital">
       <article className="world-article">
-        <nav className="font-mono text-[0.7rem] tracking-[0.25em] uppercase text-[var(--silver-dim)] mb-10">
-          <Link to="/" className="hover:text-[var(--purple-light)]">בית</Link>
-          <span className="mx-2">/</span>
-          <span className="text-[var(--purple-light)]">בניית אתרים</span>
-        </nav>
-
-        <h1 className="font-display text-[2.4rem] md:text-[3.4rem] leading-[1.05] mb-6 text-balance">
-          בונה אתרים, מפתח Full Stack ומעצב UX/UI בירושלים
-        </h1>
-        <p className="text-[1.1rem] text-[var(--silver)] mb-12">
-          אני ליאל ווינברג — בונה אתרים ומערכות אינטרנט מהירים, מדויקים ויפים. אני לוקח פרויקט מאפס ועד עלייה לאוויר: מאסטרטגיה ועיצוב חוויית משתמש (UX/UI), דרך פיתוח Full Stack ב-React ו-TypeScript, ועד דאטהבייס, אינטגרציות ו-SEO טכני.
-        </p>
-
-        <h2 className="font-display text-[1.8rem] mt-12 mb-4">מה אני בונה</h2>
-        <ul className="list-disc pr-6 space-y-2 text-[var(--silver)]">
-          <li><strong className="text-[var(--white)]">אתרי תדמית</strong> לעסקים קטנים, בעלי מקצוע ופרילנסרים — מהיר לעלייה לאוויר, מותאם מובייל, מותאם גוגל.</li>
-          <li><strong className="text-[var(--white)]">חנויות אונליין</strong> ומערכות מכירה — סליקה, מלאי, ניהול הזמנות, אינטגרציה ל-WhatsApp ולמערכת השליחויות.</li>
-          <li><strong className="text-[var(--white)]">מערכות Web ו-SaaS</strong> — דאשבורדים, אזורים אישיים, אוטומציות, AI, וכל מה שדורש לוגיקה אמיתית בצד-שרת.</li>
-          <li><strong className="text-[var(--white)]">דפי נחיתה</strong> לקמפיינים — A/B testing, מהירות טעינה מתחת ל-1.5 שניות, אופטימיזציה להמרה.</li>
-        </ul>
-
-        <h2 className="font-display text-[1.8rem] mt-12 mb-4">איך אני עובד אחרת מבונה אתרים ממוצע</h2>
-        <p className="text-[var(--silver)] mb-4">
-          רוב בוני האתרים בישראל לוקחים תבנית WordPress, מחליפים צבעים, וקוראים לזה אתר. אני בונה כל אתר מהיסוד, בקוד נקי, עם ארכיטקטורה שמחזיקה לשנים. זה אומר שהאתר שלך נטען מהר יותר, מדורג גבוה יותר בגוגל, מאובטח יותר, ולא נשבר עם כל עדכון של פלאגין.
-        </p>
-        <p className="text-[var(--silver)] mb-4">
-          אני גם מעצב את חוויית המשתמש בעצמי — אז אין פינג-פונג בין מעצב למפתח. אתה מקבל מהמוח האחד גם את ההבנה של הפסיכולוגיה של המבקר באתר, וגם את היכולת לממש אותה בקוד מדויק.
-        </p>
-
-        <h2 className="font-display text-[1.8rem] mt-12 mb-4">תהליך העבודה</h2>
-        <ol className="list-decimal pr-6 space-y-2 text-[var(--silver)]">
-          <li><strong className="text-[var(--white)]">שיחת ייעוץ חינם</strong> — מבינים מה העסק שלך, מי הקהל, ומה הצלחה נראית.</li>
-          <li><strong className="text-[var(--white)]">הצעת מחיר וגאנט</strong> — שקוף, ללא הפתעות.</li>
-          <li><strong className="text-[var(--white)]">עיצוב ואישור</strong> — מוקאפ, דיון, התאמות.</li>
-          <li><strong className="text-[var(--white)]">פיתוח</strong> — בנייה מודולרית עם תצוגה מקדימה בכל שלב.</li>
-          <li><strong className="text-[var(--white)]">עלייה לאוויר + SEO</strong> — חיבור דומיין, Search Console, Analytics, מהירות.</li>
-          <li><strong className="text-[var(--white)]">תחזוקה</strong> — חודש ראשון על חשבון הבית.</li>
-        </ol>
-
-        <h2 className="font-display text-[1.8rem] mt-12 mb-4">למה זה משתלם דווקא אצלי</h2>
-        <p className="text-[var(--silver)] mb-4">
-          לא רק שאני בונה אתר — אני מבטיח שהוא יביא לקוחות. אופטימיזציה ל-SEO, מהירות, נגישות (תקן ישראלי 5568), Schema.org, ו-Open Graph נקיים מובנים בכל פרויקט מהיום הראשון. זה לא תוסף; זה חלק מהבסיס.
-        </p>
-
-        <div className="mt-16 p-6 border border-[var(--border-purple)] bg-[var(--purple-dim)]">
-          <h2 className="font-display text-[1.6rem] mb-3">מוכן להתחיל?</h2>
-          <p className="text-[var(--silver)] mb-4">שיחת ייעוץ חינם של 20 דקות, ללא מחויבות.</p>
-          <div className="flex flex-wrap gap-3 font-mono text-[0.8rem] tracking-[0.2em] uppercase">
-            <a href="https://wa.me/972546969367?text=%D7%90%D7%94%D7%9C%D7%9F%20%D7%9C%D7%99%D7%90%D7%9C%2C%20%D7%90%D7%A0%D7%99%20%D7%A4%D7%95%D7%A0%D7%94%20%D7%91%D7%A7%D7%A9%D7%A8%20%D7%9C%D7%A4%D7%99%D7%AA%D7%95%D7%97%20%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA%20%D7%9E%D7%95%D7%AA%D7%90%D7%9E%D7%AA%20%D7%90%D7%99%D7%A9%D7%99%D7%AA." className="bg-[var(--purple)] hover:bg-[var(--purple-hover)] text-white px-5 py-3">WhatsApp</a>
-            <a href="mailto:lielwa2004@gmail.com?subject=בניית אתר" className="border border-[var(--border-purple)] text-[var(--purple-light)] hover:bg-[var(--purple-dim)] px-5 py-3">Email</a>
-            <Link to="/" className="border border-[var(--border)] text-[var(--silver)] hover:text-[var(--white)] px-5 py-3">חזרה לבית</Link>
-          </div>
-        </div>
+        <WorldCopy blocks={WEB_BLOCKS} />
       </article>
     </WorldShell>
   );

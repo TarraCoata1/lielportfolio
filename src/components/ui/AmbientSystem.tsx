@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useI18n } from "../i18n/I18nContext";
+import { MotionToggle } from "./MotionToggle";
 import { ParticleNetwork } from "./ParticleNetwork";
 
 type Env = "liel" | "work" | "digital" | "canine" | "liquid";
@@ -8,9 +9,9 @@ const MAP: [string, Env][] = [
   ["#top", "liel"],
   ["#about", "liel"],
   ["#digital-architecture, #projects, #testimonials", "work"],
-  [".facet--digital", "digital"],
-  [".facet--canine", "canine"],
-  [".facet--liquid", "liquid"],
+  [".facet--digital, .world-shell--digital", "digital"],
+  [".facet--canine, .world-shell--canine", "canine"],
+  [".facet--liquid, .world-shell--liquid", "liquid"],
   [".world-transition--human, #contact, footer", "liel"],
 ];
 
@@ -79,6 +80,7 @@ export function AmbientSystem() {
       <div className="ambient-layer" aria-hidden="true" />
       <div className="light-field" aria-hidden="true"><i /><i /><i /></div>
       <ParticleNetwork />
+      <MotionToggle />
       <div className="live-meta" aria-hidden="true">
         <span>{time ?? "--:--"}</span>
         <span>{locale.toUpperCase()}</span>
