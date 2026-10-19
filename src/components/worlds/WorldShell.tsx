@@ -8,7 +8,6 @@ import { MARK, TarraLinks } from "@/components/worlds/WorldPortal";
 import { LazyScene } from "@/components/three/LazyScene";
 import { useI18n } from "@/components/i18n/I18nContext";
 import { Button } from "@/components/ui/button";
-import caninePhoto from "@/assets/liel-canine.jpg.asset.json";
 import barPhoto from "@/assets/liel-bar.jpg.asset.json";
 import shakerPhoto from "@/assets/liel-shaker.jpg.asset.json";
 
@@ -35,8 +34,8 @@ export function WorldShell({ world, children }: { world: WorldId; children: Reac
       : world === "canine"
         ? [
             {
-              href: caninePhoto.url,
-              image: caninePhoto.url,
+              href: "/images/liel-and-chief.webp",
+              image: "/images/liel-and-chief.webp",
               name: { he: "צ׳יף", en: "Chief" },
               category: { he: "עבודה בשטח", en: "Field work" },
             },

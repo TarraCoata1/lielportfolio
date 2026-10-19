@@ -1,6 +1,5 @@
 import type { LocalizedString } from "@/lib/portfolio-data";
 import digitalImg from "@/assets/tarracoata-preview.png.asset.json";
-import canineImg from "@/assets/liel-canine.jpg.asset.json";
 import liquidImg from "@/assets/liel-shaker.jpg.asset.json";
 
 export type WorldId = "digital" | "canine" | "liquid";
@@ -43,7 +42,7 @@ export const WORLDS: World[] = [
       { he: "גבולות", en: "Boundaries" },
       { he: "צ׳יף", en: "Chief" },
     ],
-    image: canineImg.url,
+    image: "/images/liel-and-chief.webp",
   },
   {
     id: "liquid",

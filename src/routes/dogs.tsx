@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { WorldShell } from "@/components/worlds/WorldShell";
 import { WorldCopy, type WorldBlock } from "@/components/worlds/WorldCopy";
-import canineAsset from "@/assets/liel-canine.jpg.asset.json";
 
 const TITLE = "מאלף כלבים בירושלים | התנהגות, ציות, אגרסיביות — ליאל ווינברג";
 const DESC =
@@ -21,8 +20,8 @@ export const Route = createFileRoute("/dogs")({
       { name: "robots", content: "index, follow, max-image-preview:large" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: canineAsset.url },
-      { name: "twitter:image", content: canineAsset.url },
+      { property: "og:image", content: "https://www.lielwainberg.com/images/liel-and-chief.webp" },
+      { name: "twitter:image", content: "https://www.lielwainberg.com/images/liel-and-chief.webp" },
       { property: "og:locale", content: "he_IL" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
