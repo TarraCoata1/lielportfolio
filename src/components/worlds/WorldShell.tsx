@@ -4,10 +4,10 @@ import { ArrowRight } from "lucide-react";
 import { WORLDS, type WorldId } from "@/lib/worlds";
 import { ALL_PROJECTS } from "@/lib/portfolio-data";
 import { AmbientSystem } from "@/components/ui/AmbientSystem";
-import { MARK, TarraLinks } from "@/components/worlds/WorldPortal";
-import { LazyScene } from "@/components/three/LazyScene";
+import { TarraLinks } from "@/components/worlds/WorldPortal";
 import { useI18n } from "@/components/i18n/I18nContext";
 import { Button } from "@/components/ui/button";
+import { PracticeHero, PracticeWork } from "@/components/worlds/PracticeExperience";
 import barPhoto from "@/assets/liel-bar.jpg.asset.json";
 import shakerPhoto from "@/assets/liel-shaker.jpg.asset.json";
 
@@ -89,38 +89,19 @@ export function WorldShell({ world, children }: { world: WorldId; children: Reac
       </header>
 
       <main id="main-content">
-        <section className="world-hero" aria-label={current.name}>
-          <div className="world-hero__text">
-            <img
-              className={`brand-mark brand-mark--${MARK[world]}`}
-              src={`/icons/${MARK[world]}-180.png`}
-              alt={`${current.name} logo`}
-              width="52"
-              height="52"
-            />
-            <p className="world-hero__index">
-              {current.index} / {current.name}
-            </p>
-            <p className="world-hero__line">{t(current.line)}</p>
-            <p className="world-hero__discipline">{t(current.discipline)}</p>
-          </div>
-          <figure className="world-hero__media">
-            <img src={current.image} alt={t({ he: `ליאל ווינברג — ${current.discipline.he}`, en: `Liel Wainberg — ${current.discipline.en}` })} />
-
-          </figure>
-          <div className="world-object" data-scene-track><LazyScene kind={world} fallback={<img src={current.image} alt="" />} /></div>
-        </section>
+        <PracticeHero world={current} />
 
         {world === "digital" && (
           <div className="world-body">
             <TarraLinks />
           </div>
         )}
-        <div className="world-body">{children}</div>
+        <div className="world-body practice-story" id="practice-story">{children}</div>
+        <PracticeWork world={current} />
 
-        {evidence.length > 0 && (
+        {world === "liquid" && evidence.length > 0 && (
           <section className="world-evidence" aria-labelledby="evidence-title">
-            <h2 id="evidence-title">{t({ he: world === "digital" ? "עבודות נבחרות" : "מתוך העבודה", en: world === "digital" ? "Selected work" : "From the work" })}</h2>
+            <h2 id="evidence-title">{t({ he: "מתוך העבודה", en: "From the work" })}</h2>
             <ul>
               {evidence.map((p) => (
                 <li key={p.image}>
@@ -143,6 +124,11 @@ export function WorldShell({ world, children }: { world: WorldId; children: Reac
           </section>
         )}
 
+        <section className="practice-contact" id="practice-contact">
+          <h2>{t(world === "digital" ? { he: "מה בונים עכשיו?", en: "What are we building next?" } : world === "canine" ? { he: "בואו נתחיל להקשיב.", en: "Let's start listening." } : { he: "לחיי הערב הבא.", en: "Here's to the next evening." })}</h2>
+          <a className="practice-action" href={`https://wa.me/972546969367?text=${encodeURIComponent(t({ he: `היי ליאל, אשמח לדבר איתך על ${current.discipline.he}`, en: `Hi Liel, I'd like to talk about ${current.discipline.en}` }))}`}>WhatsApp <ArrowRight aria-hidden /></a>
+          <a className="practice-contact__email" href="mailto:lielwa2004@gmail.com">lielwa2004@gmail.com</a>
+        </section>
         <nav className="world-next" aria-label={t({ he: "המשך", en: "Continue" })}>
           {WORLDS.filter((w) => w.id !== world).map((w) => (
             <Link key={w.id} to={w.route} data-w={w.id}>

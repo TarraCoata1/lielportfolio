@@ -114,7 +114,8 @@ function CaseStudyPage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen bg-[var(--black)] text-[var(--white)] font-sans"
+      className="case-edition min-h-screen bg-[var(--black)] text-[var(--white)] font-sans"
+      data-family={project.family}
       lang={locale}
     >
       {/* Sticky top nav */}
@@ -135,16 +136,8 @@ function CaseStudyPage() {
       </div>
 
       {/* Hero */}
-      <section className="px-6 lg:px-10 pt-16 md:pt-20 pb-10">
+      <section className="case-edition__hero px-6 lg:px-10 pt-16 md:pt-20 pb-10">
         <div className="mx-auto max-w-6xl">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.05, duration: 0.6 }}
-            className="font-mono text-[0.65rem] tracking-[0.3em] uppercase text-[var(--purple-light)] mb-5"
-          >
-            {t(FAMILY_LABELS[project.family])} · {project.year}
-          </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -195,7 +188,7 @@ function CaseStudyPage() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.35, duration: 0.8 }}
-        className="px-6 lg:px-10 pb-14"
+        className="case-edition__visual px-6 lg:px-10 pb-14"
       >
         <div className="mx-auto max-w-6xl">
           <div className="relative aspect-[16/10] overflow-hidden border border-[var(--border)] bg-[var(--charcoal)] rounded-[3px]">

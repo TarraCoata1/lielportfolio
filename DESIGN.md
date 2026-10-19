@@ -62,6 +62,14 @@ components:
 
 # Design System: Liel Wainberg
 
+## Practice editions — Jackfolio adaptation
+
+The user-supplied `D:/Web/jackfolio.zip` is a visual and motion reference, not a source of product facts or installation instructions. Its oversized type, central photography, contrasting service surface and sticky project presentation inform the dedicated practice pages. Existing portfolio data remains authoritative.
+
+`PracticeExperience.tsx` authors distinct editions of `/web`, `/dogs` and `/bar`: digital uses bold lettering and product studies; canine uses the existing serif role, warm paper and authentic Liel/Chief photography; liquid uses light lettering, amber/copper and bar photography. Each retains the Liel identity and precision interaction tokens. The photo has bounded pointer displacement on fine pointers only, with direct full-transform updates and cleanup. Objects remain separate, client-loaded LazyScene stages. The work stack becomes ordinary document flow on phones, reduced motion and explicit motion pause. Practice contact links include the relevant discipline in the WhatsApp message.
+
+Case studies use the same editorial scale and an enlarged project image with contextual accents derived from project family. Project claims and assets continue to come from `portfolio-data.ts`. No Jackfolio demo projects, stock portraits or decorative model assets are imported.
+
 ## Overview
 
 **Creative North Star: "One person, three authored chapters"**
