@@ -1,34 +1,11 @@
-import { useMotionPreference } from "@/hooks/use-motion-preference";
-import { motion, useScroll, useTransform } from "framer-motion";
 import { useI18n } from "../i18n/I18nContext";
-import { ArrowDown, ArrowUpRight } from "lucide-react";
-import portraitAsset from "@/assets/liel-portrait-v3.png.asset.json";
+import { ArrowUpRight } from "lucide-react";
 
 export function Hero() {
   const { t } = useI18n();
-  const reduceMotion = useMotionPreference();
-  const { scrollY } = useScroll();
-  const portraitY = useTransform(scrollY, value => `translate3d(0, ${reduceMotion ? 0 : Math.min(value, 800) * 0.04}px, 0)`);
-
 
   return (
     <section className="hero" id="top">
-      <motion.div className="hero__portrait" style={reduceMotion ? undefined : { transform: portraitY }}>
-        <img
-          src={portraitAsset.url}
-          alt={t({ he: "ליאל ווינברג", en: "Liel Wainberg" })}
-          width="1200"
-          height="1500"
-          fetchPriority="high"
-        />
-        <div className="hero__portrait-shade" />
-        <div className="hero__portrait-meta" aria-hidden="true">
-          <span>JERUSALEM</span>
-        </div>
-      </motion.div>
-
-
-
       <div className="hero__content">
         <h1>
           {t({
@@ -55,30 +32,17 @@ export function Hero() {
           })}
         </p>
         <div className="hero__actions">
-          <a className="action action--primary" href="#worlds">
-            {t({ he: "לגלות את התחומים", en: "Explore the practices" })}
+          <a className="action action--primary" href="#projects">
+            {t({ he: "לעבודות נבחרות", en: "View selected work" })}
             <ArrowUpRight aria-hidden />
           </a>
-          <a className="action action--quiet" href="#about">
-            {t({ he: "להכיר אותי", en: "Meet Liel" })}
-            <ArrowDown aria-hidden />
-          </a>
         </div>
+        <nav className="hero__world-links" aria-label={t({ he: "שלושת העולמות של ליאל", en: "Liel's three worlds" })}>
+          <a href="#tarracoata"><strong>TARRACOATA</strong><span>{t({ he: "טכנולוגיה ומערכות", en: "Technology and systems" })}</span></a>
+          <a href="#canine"><strong>CANINE.BEHAVIOR</strong><span>{t({ he: "קשר, מנהיגות והתנהגות", en: "Trust, leadership and behavior" })}</span></a>
+          <a href="#lw-liquid"><strong>LW.LIQUID</strong><span>{t({ he: "אירוח, קצב ואווירה", en: "Hospitality, timing and atmosphere" })}</span></a>
+        </nav>
       </div>
-
-      <div className="hero__footer">
-        <span>{t({ he: "תוכנה · כלבנות · אירוח", en: "Software · Canine behavior · Hospitality" })}</span>
-        <span>{t({ he: "ירושלים · עובד עם לקוחות בכל הארץ", en: "Jerusalem · Working nationwide" })}</span>
-      </div>
-
-      <a
-        href="#about"
-        className="hero__scroll-cue"
-        aria-label={t({ he: "גלילה להיכרות עם ליאל", en: "Scroll to meet Liel" })}
-      >
-        <span>{t({ he: "למטה", en: "Scroll" })}</span>
-        <i aria-hidden="true" />
-      </a>
     </section>
   );
 }

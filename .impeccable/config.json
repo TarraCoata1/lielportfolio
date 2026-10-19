@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "share tech mono",
+        "createdAt": "2026-10-19T14:45:26.478Z",
+        "reason": "Existing documented technical type role in DESIGN.md for model counters and object captions."
+      }
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 import type { LocalizedString } from "@/lib/portfolio-data";
-import digitalImg from "@/assets/liel-portrait-v3.png.asset.json";
+import digitalImg from "@/assets/tarracoata-preview.png.asset.json";
 import canineImg from "@/assets/liel-canine.jpg.asset.json";
 import liquidImg from "@/assets/liel-shaker.jpg.asset.json";
 

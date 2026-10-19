@@ -13,7 +13,7 @@ import { ReturnToLiel } from "@/components/sections/ReturnToLiel";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 import { ALL_PROJECTS } from "@/lib/portfolio-data";
-import portraitAsset from "@/assets/liel-portrait-v3.png.asset.json";
+import tarraPreviewAsset from "@/assets/tarracoata-preview.png.asset.json";
 
 const SITE = "https://www.lielwainberg.com";
 const PERSON_ID = `${SITE}/#liel-wainberg`;
@@ -29,8 +29,8 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "ליאל ווינברג | תוכנה, מערכות ומוצרים דיגיטליים" },
       { property: "og:description", content: "הפורטפוליו של ליאל ווינברג: תוכנה, מערכות, אפליקציות, UX/UI ועבודות נבחרות, לצד CANINE.BEHAVIOR ו-LW.LIQUID." },
       { property: "og:type", content: "profile" },
-      { property: "og:image", content: portraitAsset.url },
-      { name: "twitter:image", content: portraitAsset.url },
+      { property: "og:image", content: tarraPreviewAsset.url },
+      { name: "twitter:image", content: tarraPreviewAsset.url },
       { property: "og:url", content: `${SITE}/` },
       { property: "og:locale", content: "he_IL" },
       { property: "og:locale:alternate", content: "en_US" },
